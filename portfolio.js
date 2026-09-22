@@ -1,4 +1,19 @@
 (function(){
+  var digitalPlaceholders = document.querySelectorAll('.digital-placeholder');
+  if (digitalPlaceholders.length >= 2){
+    var prototypeImages = [
+      ['assets-publicidad/billboard/branding/prototipo-figma-1-reflections.png', 'Prototipo de Figma Reflections'],
+      ['assets-publicidad/billboard/branding/prototipo-figma-2-asertika.png', 'Prototipo de Figma Asértika']
+    ];
+    digitalPlaceholders.forEach(function(placeholder, index){
+      var image = document.createElement('img');
+      image.src = prototypeImages[index][0];
+      image.alt = prototypeImages[index][1];
+      image.loading = 'lazy';
+      placeholder.replaceWith(image);
+    });
+  }
+
   var socialTrack = document.querySelector('.campaign-social-track');
   if (socialTrack){
     socialTrack.classList.add('campaign-autoplay');
@@ -50,7 +65,7 @@
     document.querySelector('.portfolio-process').before(externalSection);
   }
 
-  var pieces = document.querySelectorAll('.portfolio-piece img, .wall-poster img, .communication-email img, .communication-wide img, .communication-socials img, .identity-logo img, .identity-banner img, .identity-signature img, .identity-logos img');
+  var pieces = document.querySelectorAll('.portfolio-piece img, .wall-poster img, .communication-email img, .communication-wide img, .communication-socials img, .digital-window img, .identity-logo img, .identity-banner img, .identity-signature img, .identity-logos img');
   var dialog = document.createElement('dialog');
   dialog.className = 'portfolio-lightbox';
   dialog.innerHTML = '<button type="button" class="lightbox-close" aria-label="Cerrar imagen">×</button><img alt=""><p></p>';
