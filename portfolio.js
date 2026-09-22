@@ -16,17 +16,7 @@
 
   var socialTrack = document.querySelector('.campaign-social-track');
   if (socialTrack){
-    socialTrack.classList.add('campaign-autoplay');
-    var socialImages = Array.prototype.slice.call(socialTrack.querySelectorAll('img'));
-    var socialIndex = 0;
-    socialImages.forEach(function(image, index){ image.classList.toggle('is-active', index === 0); });
-    if (socialImages.length > 1){
-      window.setInterval(function(){
-        socialImages[socialIndex].classList.remove('is-active');
-        socialIndex = (socialIndex + 1) % socialImages.length;
-        socialImages[socialIndex].classList.add('is-active');
-      }, 3600);
-    }
+    socialTrack.classList.add('campaign-composition');
   }
 
   var applications = document.querySelector('.poster-applications');
