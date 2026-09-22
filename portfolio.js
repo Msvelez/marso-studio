@@ -66,6 +66,37 @@
   }
 
   var pieces = document.querySelectorAll('.portfolio-piece img, .wall-poster img, .communication-email img, .communication-wide img, .communication-socials img, .digital-window img, .identity-logo img, .identity-banner img, .identity-signature img, .identity-logos img');
+  var projectFacts = [
+    {selector:'.campaign-case .portfolio-heading', title:'CAMPAÑA / FILM', type:'Campaña audiovisual', role:'Dirección de arte', pieces:'Poster · Postal · Social', concept:'Un universo visual consistente en cada punto de contacto.'},
+    {selector:'.poster-section .portfolio-heading', title:'POSTERS', type:'Publicidad editorial', role:'Diseño gráfico', pieces:'Poster · MUPI · Billboard', concept:'Imágenes pensadas para pedir espacio y quedarse en la memoria.'},
+    {selector:'.communication-section .portfolio-heading', title:'COMUNICACIÓN', type:'Sistema de contenidos', role:'Dirección visual', pieces:'Email · Postal · Social', concept:'Una identidad que cambia de formato sin perder su voz.'},
+    {selector:'.digital-case .portfolio-heading', title:'EXPERIENCIAS DIGITALES', type:'Prototipo Figma', role:'UX/UI · Dirección visual', pieces:'Reflections · Asértika', concept:'Interfaces diseñadas para dar a una idea un lugar donde vivir.'},
+    {selector:'.marso-case .portfolio-heading', title:'MARSO STUDIO', type:'Identidad de marca', role:'Dirección de arte · Branding', pieces:'Logo · Sistema · Aplicaciones', concept:'La identidad que estás recorriendo también es una pieza del proyecto.'}
+  ];
+  projectFacts.forEach(function(fact){
+    var heading = document.querySelector(fact.selector);
+    if (!heading || heading.querySelector('.project-fact')) return;
+    var factBox = document.createElement('aside');
+    factBox.className = 'project-fact';
+    factBox.innerHTML = '<span>FICHA DE PROYECTO</span><dl><div><dt>Proyecto</dt><dd>' + fact.title + '</dd></div><div><dt>Tipo</dt><dd>' + fact.type + '</dd></div><div><dt>Rol</dt><dd>' + fact.role + '</dd></div><div><dt>Piezas</dt><dd>' + fact.pieces + '</dd></div></dl><p>' + fact.concept + '</p>';
+    heading.appendChild(factBox);
+  });
+
+  var signalButton = document.querySelector('.portfolio-signal-button');
+  var experiment = document.querySelector('.portfolio-experiment');
+  if (signalButton && experiment){
+    signalButton.addEventListener('click', function(){
+      var active = experiment.classList.toggle('is-active');
+      signalButton.setAttribute('aria-pressed', active);
+    });
+    experiment.addEventListener('pointermove', function(event){
+      if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+      var rect = experiment.getBoundingClientRect();
+      experiment.style.setProperty('--signal-x', ((event.clientX - rect.left) / rect.width * 100) + '%');
+      experiment.style.setProperty('--signal-y', ((event.clientY - rect.top) / rect.height * 100) + '%');
+    });
+  }
+
   var dialog = document.createElement('dialog');
   dialog.className = 'portfolio-lightbox';
   dialog.innerHTML = '<button type="button" class="lightbox-close" aria-label="Cerrar imagen">×</button><img alt=""><p></p>';
