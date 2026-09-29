@@ -1,219 +1,150 @@
 <!doctype html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Branding y publicidad en Marso Studio: ideas que encuentran su forma.">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Branding y publicidad en Marso Studio: campañas, posters, comunicación e identidad. Ideas que encuentran su forma.">
   <title>Branding + Publicidad — Marso Studio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="branding.css">
+  <link rel="stylesheet" href="style.css"><link rel="stylesheet" href="area.css">
 </head>
-<body class="branding-page">
-  <svg class="symbol-defs" aria-hidden="true" focusable="false">
-    <defs>
-      <symbol id="spark" viewBox="-120 -120 240 240">
-        <polygon points="0,-112 13,0 0,112 -13,0"/>
-        <polygon points="-118,0 0,-11 118,0 0,11"/>
-        <polygon points="0,-44 7,0 0,44 -7,0" transform="rotate(45)"/>
-        <polygon points="0,-44 7,0 0,44 -7,0" transform="rotate(-45)"/>
-      </symbol>
-    </defs>
-  </svg>
+<body class="area-page area-branding">
+  <svg class="symbol-defs" aria-hidden="true"><defs><symbol id="spark" viewBox="-120 -120 240 240"><polygon points="0,-112 13,0 0,112 -13,0"/><polygon points="-118,0 0,-11 118,0 0,11"/><polygon points="0,-44 7,0 0,44 -7,0" transform="rotate(45)"/><polygon points="0,-44 7,0 0,44 -7,0" transform="rotate(-45)"/></symbol></defs></svg>
+  <canvas id="stars" aria-hidden="true"></canvas><div class="area-trail" aria-hidden="true"><span></span></div>
+  <header class="area-header"><a class="brand" href="index.html" aria-label="Volver a Marso Studio"><span class="mini-spark"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>MARSO STUDIO</a><nav class="area-nav" aria-label="Áreas de Marso"><a class="current" href="branding.html" aria-current="page">Branding</a><a href="digital.html">Digital</a><a href="motion.html">Motion</a><a href="lab.html">3D</a><a href="experiencias.html">Web</a></nav><a class="area-back" href="index.html"><span aria-hidden="true">←</span> Inicio</a></header>
+  <main>
+    <section class="area-hero" aria-labelledby="area-title"><div class="wrap area-hero-grid"><div class="area-hero-copy"><p class="eyebrow reveal">Branding + Publicidad</p><h1 id="area-title" class="reveal">Ideas que<br><em>encuentran</em><br>su forma.</h1><p class="area-lede reveal">Identidades, campañas y piezas que nacieron como ideas y encontraron su forma en el mundo.</p><a class="btn btn-solid reveal" href="#campanas">Explorar proyectos <span aria-hidden="true">↓</span></a></div><div class="area-visual branding-visual" aria-hidden="true"><span class="branding-ring branding-ring-one"></span><span class="branding-ring branding-ring-two"></span><span class="branding-core"></span><span class="branding-coordinate">SEÑAL / 01<br>34° 36' 12" N<br>58° 22' 54" O</span></div></div><div class="wrap area-hero-foot"><span>Una estación creativa para ideas en movimiento</span><span class="area-index">01 / 05</span></div></section>
+    <section class="area-pause" aria-labelledby="pause-title"><div class="wrap"><p class="pause-kicker reveal">Una pausa para mirar mejor</p><h2 id="pause-title" class="reveal">Una marca no solo<br>se <em>ve</em>. Se siente.</h2><p class="pause-note reveal">Por eso no empezamos diseñando.<br>Empezamos preguntando.</p></div></section>
+    <section class="area-section" id="territorios" aria-labelledby="territories-title"><div class="wrap"><div class="area-heading reveal"><p class="eyebrow">Coordenadas creativas</p><h2 id="territories-title">¿Qué podemos<br>crear juntos?</h2><p>Cuatro formas de darle cuerpo a una idea: campaña, publicidad, comunicación e identidad.</p></div><div class="area-territories"><a class="area-territory reveal" href="#campanas"><span>01</span><span class="area-territory-copy"><strong>Campañas</strong><span>Construimos campañas que tienen algo que decir.</span><small>Conceptualización · key visuals · piezas sociales · dirección creativa</small></span><i class="territory-shape" aria-hidden="true"></i><b class="area-arrow" aria-hidden="true">↗</b></a><a class="area-territory reveal" href="#posters"><span>02</span><span class="area-territory-copy"><strong>Publicidad</strong><span>Imágenes pensadas para pedir espacio y quedarse en la memoria.</span><small>Posters · MUPI · billboard · wildposting</small></span><i class="territory-shape" aria-hidden="true"></i><b class="area-arrow" aria-hidden="true">↗</b></a><a class="area-territory reveal" href="#comunicacion"><span>03</span><span class="area-territory-copy"><strong>Comunicación</strong><span>Le damos ritmo a lo que una marca quiere contar.</span><small>Email · postales · redes sociales · contenido</small></span><i class="territory-shape" aria-hidden="true"></i><b class="area-arrow" aria-hidden="true">↗</b></a><a class="area-territory reveal" href="#identidad"><span>04</span><span class="area-territory-copy"><strong>Identidad</strong><span>Convertimos una idea en un lenguaje visual reconocible.</span><small>Branding estratégico · logotipos · sistemas gráficos · dirección de arte</small></span><i class="territory-shape" aria-hidden="true"></i><b class="area-arrow" aria-hidden="true">↗</b></a></div></div></section>
 
-  <canvas id="stars" aria-hidden="true"></canvas>
-  <div class="brand-flare" aria-hidden="true"></div>
-  <div class="brand-trail" aria-hidden="true"><span></span></div>
-
-  <header class="brand-header">
-    <a class="brand" href="index.html" aria-label="Volver a Marso Studio">
-      <span class="mini-spark"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>
-      MARSO STUDIO
-    </a>
-    <nav class="links" aria-label="Navegación de Branding y Publicidad">
-      <a href="#campanas">Campañas</a>
-      <a href="#posters">Posters</a>
-      <a href="#proceso-portfolio">Proceso</a>
-      <a href="digital.html">Digital</a>
-      <a href="motion.html">Motion</a>
-      <a href="lab.html">3D</a>
-    </nav>
-    <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Volver al estudio</a>
-  </header>
-
-  <main class="portfolio-main">
-    <section class="brand-hero" aria-labelledby="brand-title">
-      <div class="wrap brand-hero-grid">
-        <div class="brand-hero-copy">
-          <p class="eyebrow reveal">Branding + Publicidad</p>
-          <h1 id="brand-title" class="reveal">Ideas que<br><em>encuentran</em><br>su forma.</h1>
-          <p class="brand-hero-lede reveal">Identidades, campañas y piezas que nacieron como ideas y encontraron su forma en el mundo.</p>
-          <a class="btn btn-solid reveal" href="#campanas">Explorar proyectos <span aria-hidden="true">↓</span></a>
-        </div>
-        <div class="signal-field" aria-hidden="true">
-          <span class="signal-label">SEÑAL / 01</span>
-          <span class="signal-core"></span>
-          <span class="signal-ring signal-ring-one"></span>
-          <span class="signal-ring signal-ring-two"></span>
-          <span class="signal-line signal-line-one"></span>
-          <span class="signal-line signal-line-two"></span>
-          <span class="signal-coordinate">34° 36' 12" N<br>58° 22' 54" O</span>
-        </div>
-      </div>
-      <div class="brand-hero-foot wrap">
-        <span>Una estación creativa para ideas en movimiento</span>
-        <span class="hero-index">01 / 06</span>
-      </div>
-    </section>
-
-    <section class="portfolio-section campaign-case" id="campanas" aria-labelledby="campaign-title">
+    <section class="area-section" id="campanas" aria-labelledby="campaign-title">
       <div class="wrap">
-        <div class="portfolio-heading reveal"><p class="eyebrow">01 / Campañas</p><h2 id="campaign-title">Una idea,<br>muchas formas<br>de existir.</h2><p>Un concepto de film que se expande: poster, personajes, postales y piezas sociales bajo una misma dirección visual.</p></div>
-        <div class="campaign-hero-piece reveal"><img src="assets-publicidad/billboard/campana-film/poster-campana-1.png" alt="Poster principal de la campaña del film" loading="lazy"><div class="piece-caption"><span>KEY VISUAL / FILM</span><strong>El concepto toma dirección.</strong></div></div>
-        <div class="campaign-grid">
-          <figure class="portfolio-piece campaign-poster reveal"><img src="assets-publicidad/billboard/campana-film/poster-campana-2.png" alt="Segundo poster de la campaña del film" loading="lazy"><figcaption>La imagen fija el universo.</figcaption></figure>
-          <figure class="portfolio-piece campaign-triptych reveal"><img src="assets-publicidad/billboard/campana-film/triptico-vista-frontal.png" alt="Vista frontal del tríptico de campaña" loading="lazy"><figcaption>El relato se vuelve objeto.</figcaption></figure>
-          <figure class="portfolio-piece campaign-triptych-back reveal"><img src="assets-publicidad/billboard/campana-film/triptico-vista-tarsera.png" alt="Vista trasera del tríptico de campaña" loading="lazy"><figcaption>El sistema continúa al dorso.</figcaption></figure>
+        <div class="area-heading reveal"><p class="eyebrow">01 / Campaña de film</p><h2 id="campaign-title">Una idea,<br>muchas formas<br>de <em>existir.</em></h2><p>Un concepto de film que se expande: poster, personajes, postales y piezas sociales bajo una misma dirección visual.</p></div>
+        <div class="area-case-grid" data-zoom>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/poster-campana-1.png" alt="Poster principal de la campaña del film" loading="lazy" width="5400" height="7200"><figcaption><span>KEY VISUAL / FILM</span><span>El concepto toma dirección</span></figcaption></figure>
+          <div class="area-copy reveal">
+            <p class="area-quote">“Un universo visual consistente en cada punto de contacto.”</p>
+            <p>La campaña parte de un key visual y se despliega en un segundo poster, un tríptico impreso y una serie de piezas para redes protagonizadas por los personajes.</p>
+            <dl class="area-facts">
+              <div><dt>Tipo</dt><dd>Campaña audiovisual</dd></div>
+              <div><dt>Rol</dt><dd>Dirección de arte</dd></div>
+              <div><dt>Piezas</dt><dd>Poster · Postal · Social</dd></div>
+            </dl>
+          </div>
         </div>
-        <div class="campaign-socials reveal"><p class="portfolio-label">APLICACIONES / REDES</p><div class="campaign-social-track"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-angye.png" alt="Pieza social de campaña" loading="lazy"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-david.png" alt="Pieza social de campaña" loading="lazy"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-emily.png" alt="Pieza social de campaña" loading="lazy"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-mariana.png" alt="Pieza social de campaña" loading="lazy"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-sofia.png" alt="Pieza social de campaña" loading="lazy"></div></div>
+        <div class="area-row brand-film-row" data-zoom>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/poster-campana-2.png" alt="Segundo poster de la campaña del film" loading="lazy" width="3300" height="5100"><figcaption><span>POSTER / 02</span><span>La imagen fija el universo</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/triptico-vista-frontal.png" alt="Vista frontal del tríptico de campaña" loading="lazy" width="3300" height="2400"><figcaption><span>TRÍPTICO / FRENTE</span><span>El relato se vuelve objeto</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/triptico-vista-tarsera.png" alt="Vista trasera del tríptico de campaña" loading="lazy" width="3300" height="2400"><figcaption><span>TRÍPTICO / DORSO</span><span>El sistema continúa al dorso</span></figcaption></figure>
+        </div>
+        <p class="area-label reveal">APLICACIONES / REDES</p>
+        <div class="area-row brand-socials" data-zoom>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-angye.png" alt="Pieza social de campaña: Angye" loading="lazy" width="3038" height="1350"></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-david.png" alt="Pieza social de campaña: David" loading="lazy" width="3038" height="1350"></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-emily.png" alt="Pieza social de campaña: Emily" loading="lazy" width="3038" height="1350"></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-mariana.png" alt="Pieza social de campaña: Mariana" loading="lazy" width="3038" height="1350"></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/campana-film/publicidad-instagram-sofia.png" alt="Pieza social de campaña: Sofía" loading="lazy" width="3174" height="1350"></figure>
+        </div>
       </div>
     </section>
 
-    <section class="portfolio-section poster-section" id="posters" aria-labelledby="posters-title"><div class="wrap"><div class="portfolio-heading poster-heading reveal"><p class="eyebrow">02 / Publicidad</p><h2 id="posters-title">Ideas que<br>piden pared.</h2><p>Seis posters, seis maneras de construir presencia cuando una imagen necesita ocupar espacio.</p></div><div class="poster-wall"><figure class="wall-poster poster-one reveal"><img src="assets-publicidad/billboard/posters/poster-cocacola-magazine.png" alt="Poster Coca-Cola Magazine" loading="lazy"><figcaption>Coca-Cola Magazine / Poster</figcaption></figure><figure class="wall-poster poster-two reveal"><img src="assets-publicidad/billboard/posters/poster-ilustrado-forrest-gump.png" alt="Poster ilustrado de Forrest Gump" loading="lazy"><figcaption>Forrest Gump / Ilustración</figcaption></figure><figure class="wall-poster poster-three reveal"><img src="assets-publicidad/billboard/posters/poster-kingsofleon-estereo-picnic.png" alt="Poster Kings of Leon Estéreo Picnic" loading="lazy"><figcaption>Kings of Leon / Estéreo Picnic</figcaption></figure><figure class="wall-poster poster-four reveal"><img src="assets-publicidad/billboard/posters/poster-ladygaga-estereo-picnic.png" alt="Poster Lady Gaga Estéreo Picnic" loading="lazy"><figcaption>Lady Gaga / Estéreo Picnic</figcaption></figure><figure class="wall-poster poster-five reveal"><img src="assets-publicidad/billboard/posters/poster-thecure-estereo-picnic.png" alt="Poster The Cure Estéreo Picnic" loading="lazy"><figcaption>The Cure / Estéreo Picnic</figcaption></figure><figure class="wall-poster poster-six reveal"><img src="assets-publicidad/billboard/posters/poster-themarias-estereo-picnic.png" alt="Poster The Marías Estéreo Picnic" loading="lazy"><figcaption>The Marías / Estéreo Picnic</figcaption></figure></div><div class="poster-applications reveal"><img src="assets-publicidad/billboard/mupi/mupi-ladygaga-estereo-picnic.png" alt="Aplicación MUPI del poster de Lady Gaga" loading="lazy"><img src="assets-publicidad/billboard/wildposting/wildposting.png" alt="Aplicación wildposting de una campaña" loading="lazy"><span>Una pieza cambia de escala.<br>La dirección permanece.</span></div></div></section>
-
-    <section class="portfolio-section communication-section" id="comunicacion" aria-labelledby="communication-title"><div class="wrap"><div class="portfolio-heading reveal"><p class="eyebrow">03 / Comunicación</p><h2 id="communication-title">Una idea también<br>sabe <em>hablar.</em></h2><p>Una identidad no vive en un solo formato: cambia de ritmo entre email, postal y contenido.</p></div><div class="communication-grid"><figure class="communication-email email-coca reveal"><img src="assets-publicidad/billboard/comunicacion/email-cocacola.png" alt="Diseño de email para Coca-Cola" loading="lazy"><figcaption>EMAIL / Coca-Cola</figcaption></figure><figure class="communication-email email-north reveal"><img src="assets-publicidad/billboard/comunicacion/email-northface.png" alt="Diseño de email para The North Face" loading="lazy"><figcaption>EMAIL / The North Face</figcaption></figure><figure class="communication-wide reveal"><img src="assets-publicidad/billboard/comunicacion/postales-mambo-infraleve.png" alt="Postales de Mambo Infraleve" loading="lazy"><figcaption>POSTALES / Mambo Infraleve</figcaption></figure><div class="communication-socials reveal"><img src="assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.png" alt="Carrusel de publicación Chocosapiens" loading="lazy"><div><img src="assets-publicidad/billboard/comunicacion/spfc-publicacion-curso.png" alt="Publicación SPFC curso" loading="lazy"><img src="assets-publicidad/billboard/comunicacion/spfc-publicacion-devuelta-1.png" alt="Publicación SPFC De vuelta" loading="lazy"><img src="assets-publicidad/billboard/comunicacion/spfc-publicacion-navidad-frontal.png" alt="Publicación SPFC Navidad" loading="lazy"></div></div></div></div></section>
-
-    <section class="portfolio-section digital-case" id="experiencias" aria-labelledby="digital-title"><div class="wrap"><div class="portfolio-heading reveal"><p class="eyebrow">04 / Experiencias digitales</p><h2 id="digital-title">Cuando una idea<br>necesita un lugar<br>donde <em>vivir.</em></h2><p>Esta estación queda preparada para incorporar los dos prototipos de Figma cuando sus capturas o enlaces formen parte del archivo.</p></div><div class="digital-cases"><article class="digital-case-item reveal"><div class="digital-window"><div class="window-bar">PROTOTIPO / 01</div><div class="digital-placeholder"><span>CAPTURAS PENDIENTES</span><strong>Un espacio para la idea</strong></div></div><div><p class="portfolio-label">PROYECTO DIGITAL / CONCEPTO</p><h3>Un espacio para la idea</h3><p>Reservado para mostrar objetivo, recorrido, pantallas y decisiones de interfaz sin confundirlo con un sitio desarrollado.</p></div></article><article class="digital-case-item reveal"><div class="digital-window digital-window-light"><div class="window-bar">PROTOTIPO / 02</div><div class="digital-placeholder"><span>CAPTURAS PENDIENTES</span><strong>La forma de navegar</strong></div></div><div><p class="portfolio-label">PROYECTO DIGITAL / UI</p><h3>La forma de navegar</h3><p>Reservado para el segundo prototipo y sus fragmentos de sistema visual.</p></div></article></div></div></section>
-
-    <section class="portfolio-section marso-case" id="identidad" aria-labelledby="marso-title"><div class="wrap"><div class="portfolio-heading reveal"><p class="eyebrow">05 / Branding</p><h2 id="marso-title">La idea terminó<br>convirtiéndose<br>en <em>marca.</em></h2><p>Marso Studio también es un caso de estudio: una identidad construida alrededor de dirección, energía y estela.</p></div><div class="marso-identity-grid"><figure class="identity-logo reveal"><img src="assets-publicidad/billboard/branding/marso-logotipo-final.png" alt="Logotipo final de Marso Studio" loading="lazy"><figcaption>La señal / logotipo final</figcaption></figure><figure class="identity-banner reveal"><img src="assets-publicidad/billboard/branding/banner-marso-1.png" alt="Banner de identidad de Marso Studio" loading="lazy"><figcaption>La identidad encuentra un formato</figcaption></figure><figure class="identity-signature reveal"><img src="assets-publicidad/billboard/branding/email-signature-marso.png" alt="Firma de email de Marso Studio" loading="lazy"><figcaption>Una marca que también sabe comunicarse</figcaption></figure><div class="identity-logos reveal"><img src="assets-publicidad/billboard/branding/logotipo-marso-1.png" alt="Variación del logotipo de Marso" loading="lazy"><img src="assets-publicidad/billboard/branding/logotipo-mg-1.png" alt="Construcción gráfica de la identidad Marso" loading="lazy"><img src="assets-publicidad/billboard/branding/logotipo-mg-2.png" alt="Variación gráfica de la identidad Marso" loading="lazy"></div></div></div></section>
-
-    <section class="portfolio-process" id="proceso-portfolio" aria-labelledby="portfolio-process-title"><div class="wrap"><div class="portfolio-heading reveal"><p class="eyebrow">06 / Proceso</p><h2 id="portfolio-process-title">De la chispa<br>a la <em>estela.</em></h2><p>No empezamos diseñando. Empezamos buscando.</p></div><ol class="portfolio-process-list"><li class="reveal"><span>01</span><strong>Descubrir</strong><em>Entender.</em></li><li class="reveal"><span>02</span><strong>Explorar</strong><em>Probar.</em></li><li class="reveal"><span>03</span><strong>Construir</strong><em>Dar forma.</em></li><li class="reveal"><span>04</span><strong>Lanzar</strong><em>Compartir.</em></li><li class="reveal"><span>05</span><strong>Dejar estela</strong><em>Seguir creciendo.</em></li></ol></div></section>
-
-    <section class="brand-pause" aria-labelledby="pause-title">
-      <div class="wrap pause-inner">
-        <p class="pause-kicker reveal">Una pausa para mirar mejor</p>
-        <h2 id="pause-title" class="reveal">Una marca no solo<br>se <em>ve</em>. Se siente.</h2>
-        <p class="pause-note reveal">Por eso no empezamos diseñando.<br>Empezamos preguntando.</p>
-      </div>
-    </section>
-
-    <section class="territories" id="territorios" aria-labelledby="territories-title">
+    <section class="area-section" id="posters" aria-labelledby="posters-title">
       <div class="wrap">
-        <div class="section-heading reveal">
-          <p class="eyebrow">Coordenadas creativas</p>
-          <h2 id="territories-title">¿Qué podemos<br>crear juntos?</h2>
+        <div class="area-heading reveal"><p class="eyebrow">02 / Publicidad</p><h2 id="posters-title">Ideas que<br>piden <em>pared.</em></h2><p>Seis posters, seis maneras de construir presencia cuando una imagen necesita ocupar espacio.</p></div>
+        <div class="area-row area-row-3 brand-wall" data-zoom>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/posters/poster-cocacola-magazine.png" alt="Poster Coca-Cola Magazine" loading="lazy" width="711" height="1007"><figcaption><span>COCA-COLA MAGAZINE</span><span>Poster</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/posters/poster-ilustrado-forrest-gump.png" alt="Poster ilustrado de Forrest Gump" loading="lazy" width="634" height="968"><figcaption><span>FORREST GUMP</span><span>Ilustración</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/posters/poster-kingsofleon-estereo-picnic.png" alt="Poster Kings of Leon Estéreo Picnic" loading="lazy" width="5400" height="7200"><figcaption><span>KINGS OF LEON</span><span>Estéreo Picnic</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/posters/poster-ladygaga-estereo-picnic.png" alt="Poster Lady Gaga Estéreo Picnic" loading="lazy" width="5400" height="7200"><figcaption><span>LADY GAGA</span><span>Estéreo Picnic</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/posters/poster-thecure-estereo-picnic.png" alt="Poster The Cure Estéreo Picnic" loading="lazy" width="5400" height="7200"><figcaption><span>THE CURE</span><span>Estéreo Picnic</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/posters/poster-themarias-estereo-picnic.png" alt="Poster The Marías Estéreo Picnic" loading="lazy" width="1080" height="1920"><figcaption><span>THE MARÍAS</span><span>Estéreo Picnic</span></figcaption></figure>
         </div>
-        <div class="territory-list">
-          <a class="territory reveal" href="#contacto" data-territory="identity">
-            <span class="territory-number">01</span>
-            <span class="territory-copy"><strong>Identidad</strong><span>Convertimos una idea en un lenguaje visual reconocible.</span><small>Branding estratégico · naming · sistemas gráficos · dirección de arte</small></span>
-            <span class="territory-mark" aria-hidden="true"><span></span></span>
-            <span class="territory-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="territory reveal" href="#contacto" data-territory="campaign">
-            <span class="territory-number">02</span>
-            <span class="territory-copy"><strong>Publicidad</strong><span>Construimos campañas que tienen algo que decir.</span><small>Conceptualización · campañas · key visuals · dirección creativa</small></span>
-            <span class="territory-mark" aria-hidden="true"><span></span></span>
-            <span class="territory-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="territory reveal" href="#contacto" data-territory="content">
-            <span class="territory-number">03</span>
-            <span class="territory-copy"><strong>Contenido</strong><span>Le damos movimiento a lo que tu marca quiere contar.</span><small>Contenido digital · redes sociales · motion graphics · piezas audiovisuales</small></span>
-            <span class="territory-mark" aria-hidden="true"><span></span></span>
-            <span class="territory-arrow" aria-hidden="true">↗</span>
-          </a>
-          <a class="territory reveal" href="#contacto" data-territory="digital">
-            <span class="territory-number">04</span>
-            <span class="territory-copy"><strong>Experiencias digitales</strong><span>Cuando una identidad necesita convertirse en experiencia.</span><small>Diseño web · interfaces · landing pages · experiencias digitales</small></span>
-            <span class="territory-mark" aria-hidden="true"><span></span></span>
-            <span class="territory-arrow" aria-hidden="true">↗</span>
-          </a>
+        <div class="area-split">
+          <div class="area-copy reveal">
+            <p class="area-label">APLICACIONES / ESCALA</p>
+            <p class="area-quote">Una pieza cambia de escala. La dirección permanece.</p>
+            <dl class="area-facts">
+              <div><dt>Tipo</dt><dd>Publicidad editorial</dd></div>
+              <div><dt>Rol</dt><dd>Diseño gráfico</dd></div>
+              <div><dt>Piezas</dt><dd>Poster · MUPI · Billboard</dd></div>
+            </dl>
+          </div>
+          <div class="area-row area-row-3" data-zoom>
+            <figure class="area-figure reveal"><img src="assets-publicidad/billboard/mupi/mupi-ladygaga-estereo-picnic.png" alt="Aplicación MUPI del poster de Lady Gaga" loading="lazy" width="1024" height="1536"><figcaption><span>MUPI</span></figcaption></figure>
+            <figure class="area-figure reveal"><img src="assets-publicidad/billboard/wildposting/wildposting.png" alt="Aplicación wildposting de una campaña" loading="lazy" width="1024" height="1536"><figcaption><span>WILDPOSTING</span></figcaption></figure>
+            <figure class="area-figure reveal"><img src="assets-publicidad/billboard/billboard.png" alt="Aplicación billboard de una campaña" loading="lazy" width="768" height="1024"><figcaption><span>BILLBOARD</span></figcaption></figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="process" id="proceso" aria-labelledby="process-title">
-      <div class="wrap process-layout">
-        <div class="process-intro">
-          <p class="eyebrow reveal">La trayectoria</p>
-          <h2 id="process-title" class="reveal">De la chispa<br>al universo.</h2>
-          <p class="reveal">Cada proyecto empieza pequeño. Una pregunta, una conversación, una idea. Lo demás lo construimos juntos.</p>
-        </div>
-        <ol class="process-list">
-          <li class="process-step reveal"><span>01</span><div><h3>Descubrir</h3><p>Entender el problema, la idea y aquello que hace diferente al proyecto.</p></div></li>
-          <li class="process-step reveal"><span>02</span><div><h3>Explorar</h3><p>Investigar, experimentar y encontrar diferentes caminos visuales.</p></div></li>
-          <li class="process-step reveal"><span>03</span><div><h3>Construir</h3><p>Convertir el concepto en identidad, piezas y sistemas visuales.</p></div></li>
-          <li class="process-step reveal"><span>04</span><div><h3>Lanzar</h3><p>Llevar la idea al mundo y hacer que empiece a moverse.</p></div></li>
-          <li class="process-step reveal"><span>05</span><div><h3>Dejar estela</h3><p>Crear algo que pueda crecer, adaptarse y permanecer.</p></div></li>
-        </ol>
-      </div>
-    </section>
-
-    <section class="orbit" id="orbita" aria-labelledby="orbit-title">
+    <section class="area-section" id="comunicacion" aria-labelledby="communication-title">
       <div class="wrap">
-        <div class="section-heading orbit-heading reveal">
-          <p class="eyebrow">Archivo de señales</p>
-          <h2 id="orbit-title">Cosas que ya<br>salieron a órbita.</h2>
-          <p>Una colección de ideas que alguna vez fueron bocetos y terminaron convirtiéndose en algo real.</p>
+        <div class="area-heading reveal"><p class="eyebrow">03 / Comunicación</p><h2 id="communication-title">Una idea también<br>sabe <em>hablar.</em></h2><p>Una identidad no vive en un solo formato: cambia de ritmo entre email, postal y contenido.</p></div>
+        <figure class="area-figure reveal" data-zoom><img src="assets-publicidad/billboard/comunicacion/postales-mambo-infraleve.png" alt="Postales de Mambo Infraleve" loading="lazy" width="10000" height="3807"><figcaption><span>POSTALES / Mambo Infraleve</span><span>Impreso</span></figcaption></figure>
+        <div class="area-row area-row-3">
+          <figure class="area-deck reveal"><div class="area-deck-window" tabindex="0" aria-label="Email de Coca-Cola completo, desplazable"><img src="assets-publicidad/billboard/comunicacion/email-cocacola.png" alt="Diseño de email para Coca-Cola" loading="lazy" width="846" height="14997"></div><figcaption><span>EMAIL / Coca-Cola</span><a href="assets-publicidad/billboard/comunicacion/email-cocacola.png" target="_blank" rel="noopener">Ver completo <span aria-hidden="true">↗</span></a></figcaption></figure>
+          <figure class="area-deck reveal"><div class="area-deck-window" tabindex="0" aria-label="Email de The North Face completo, desplazable"><img src="assets-publicidad/billboard/comunicacion/email-northface.png" alt="Diseño de email para The North Face" loading="lazy" width="867" height="6446"></div><figcaption><span>EMAIL / The North Face</span><a href="assets-publicidad/billboard/comunicacion/email-northface.png" target="_blank" rel="noopener">Ver completo <span aria-hidden="true">↗</span></a></figcaption></figure>
+          <figure class="area-deck reveal"><div class="area-deck-window" tabindex="0" aria-label="Carrusel de Chocosapiens completo, desplazable"><img src="assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.png" alt="Carrusel de publicación Chocosapiens" loading="lazy" width="1345" height="4668"></div><figcaption><span>CARRUSEL / Chocosapiens</span><a href="assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.png" target="_blank" rel="noopener">Ver completo <span aria-hidden="true">↗</span></a></figcaption></figure>
         </div>
-        <div class="project-gallery">
-          <article class="project project-wide reveal">
-            <div class="project-art art-salto"><span class="art-word">salto</span><span class="art-stamp">IDENTIDAD / 2024</span></div>
-            <div class="project-meta"><h3>Salto</h3><p>Identidad visual · 2024</p><span>Una marca para cambiar de perspectiva.</span></div>
-          </article>
-          <article class="project project-tall reveal">
-            <div class="project-art art-norte"><span class="norte-orbit"></span><span class="art-word">NORTE</span><span class="art-stamp">CAMPAÑA / 2023</span></div>
-            <div class="project-meta"><h3>Norte</h3><p>Campaña · 2023</p><span>Encontrar dirección también es avanzar.</span></div>
-          </article>
-          <article class="project project-small reveal">
-            <div class="project-art art-pulso"><span class="pulso-wave">PULSO</span><span class="art-stamp">CONTENIDO / 2025</span></div>
-            <div class="project-meta"><h3>Pulso</h3><p>Contenido digital · 2025</p><span>Una frecuencia para estar presentes.</span></div>
-          </article>
+        <div class="area-split">
+          <div class="area-copy reveal">
+            <p class="area-label">CONTENIDO / REDES</p>
+            <p class="area-quote">Una identidad que cambia de formato sin perder su voz.</p>
+            <dl class="area-facts">
+              <div><dt>Tipo</dt><dd>Sistema de contenidos</dd></div>
+              <div><dt>Rol</dt><dd>Dirección visual</dd></div>
+              <div><dt>Piezas</dt><dd>Email · Postal · Social</dd></div>
+            </dl>
+          </div>
+          <div class="area-row area-row-3" data-zoom>
+            <figure class="area-figure reveal"><img src="assets-publicidad/billboard/comunicacion/spfc-publicacion-curso.png" alt="Publicación SPFC curso" loading="lazy" width="685" height="922"><figcaption><span>SPFC / Curso</span></figcaption></figure>
+            <figure class="area-figure reveal"><img src="assets-publicidad/billboard/comunicacion/spfc-publicacion-devuelta-1.png" alt="Publicación SPFC De vuelta" loading="lazy" width="752" height="927"><figcaption><span>SPFC / De vuelta</span></figcaption></figure>
+            <figure class="area-figure reveal"><img src="assets-publicidad/billboard/comunicacion/spfc-publicacion-navidad-frontal.png" alt="Publicación SPFC Navidad" loading="lazy" width="1080" height="1350"><figcaption><span>SPFC / Navidad</span></figcaption></figure>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="different" aria-labelledby="different-title">
-      <div class="different-marquee" aria-hidden="true"><span>IDEA / FORMA / ESTELA / IDEA / FORMA / ESTELA / </span></div>
-      <div class="wrap different-inner">
-        <p class="eyebrow reveal">Una señal fuera de ruta</p>
-        <h2 id="different-title" class="reveal">¿Y si lo hacemos<br><em>diferente?</em></h2>
-        <p class="reveal">No todo tiene que seguir una fórmula.</p>
-        <button class="signal-button reveal" type="button" aria-label="Activar una nueva señal"><span>+</span> activar señal</button>
+    <section class="area-section" id="identidad" aria-labelledby="marso-title">
+      <div class="wrap">
+        <div class="area-heading reveal"><p class="eyebrow">04 / Identidad</p><h2 id="marso-title">La idea terminó<br>convirtiéndose<br>en <em>marca.</em></h2><p>Marso Studio también es un caso de estudio: una identidad construida alrededor de dirección, energía y estela.</p></div>
+        <div class="area-case-grid" data-zoom>
+          <figure class="area-figure brand-logo reveal"><img src="assets-publicidad/billboard/branding/marso-logotipo-final.png" alt="Logotipo final de Marso Studio" loading="lazy" width="504" height="319"><figcaption><span>LA SEÑAL / Logotipo final</span></figcaption></figure>
+          <div class="area-copy reveal">
+            <p class="area-quote">“La identidad que estás recorriendo también es una pieza del proyecto.”</p>
+            <p>La señal de cuatro puntas se convierte en logotipo, banner y firma: un mismo sistema que viaja de la pantalla al correo sin perder su dirección.</p>
+            <dl class="area-facts">
+              <div><dt>Tipo</dt><dd>Identidad de marca</dd></div>
+              <div><dt>Rol</dt><dd>Dirección de arte · Branding</dd></div>
+              <div><dt>Piezas</dt><dd>Logo · Sistema · Aplicaciones</dd></div>
+            </dl>
+          </div>
+        </div>
+        <figure class="area-figure brand-banner reveal" data-zoom><img src="assets-publicidad/billboard/branding/banner-marso-1.png" alt="Banner de identidad de Marso Studio" loading="lazy" width="1331" height="371"><figcaption><span>BANNER</span><span>La identidad encuentra un formato</span></figcaption></figure>
+        <div class="area-row area-row-2" data-zoom>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/branding/email-signature-marso.png" alt="Firma de email de Marso Studio" loading="lazy" width="3310" height="1280"><figcaption><span>FIRMA DE EMAIL</span><span>Una marca que también sabe comunicarse</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/branding/logotipo-marso-1.png" alt="Variación del logotipo de Marso" loading="lazy" width="951" height="907"><figcaption><span>VARIACIÓN</span><span>Logotipo</span></figcaption></figure>
+        </div>
       </div>
     </section>
 
-    <section class="portfolio-experiment" aria-labelledby="experiment-title">
-      <div class="wrap experiment-inner">
-        <p class="eyebrow reveal">07 / Experimento Marso</p>
-        <h2 id="experiment-title" class="reveal">¿Y si lo hacemos<br><em>diferente?</em></h2>
-        <p class="reveal">Mueve la señal. La forma cambia, la dirección permanece.</p>
-        <button class="portfolio-signal-button reveal" type="button" aria-pressed="false"><span>+</span> activar señal</button>
+    <section class="area-section" id="otras-identidades" aria-labelledby="external-identity-title">
+      <div class="wrap">
+        <div class="area-heading reveal"><p class="eyebrow">05 / Archivo paralelo</p><h2 id="external-identity-title">Otras formas<br>de <em>identidad.</em></h2><p>Una selección de logos desarrollados para otros proyectos, separada del caso de Marso Studio.</p></div>
+        <div class="area-row area-row-3" data-zoom>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/branding/logotipo-mg-1.png" alt="Logotipo MG para un proyecto externo" loading="lazy" width="1600" height="900"><figcaption><span>LOGOTIPO / Proyecto externo</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/branding/logotipo-mg-2.png" alt="Variación del logotipo MG para un proyecto externo" loading="lazy" width="1600" height="900"><figcaption><span>LOGOTIPO / Proyecto externo</span></figcaption></figure>
+          <figure class="area-figure reveal"><img src="assets-publicidad/billboard/branding/logotipo-mg-3.png" alt="Variación gráfica externa del logotipo MG" loading="lazy" width="1600" height="900"><figcaption><span>LOGOTIPO / Proyecto externo</span></figcaption></figure>
+        </div>
       </div>
-      <div class="experiment-trace" aria-hidden="true"><i></i><i></i><i></i></div>
     </section>
 
-    <section class="brand-contact" id="contacto" aria-labelledby="contact-title">
-      <div class="wrap contact-inner">
-        <p class="eyebrow reveal">Aterrizaje</p>
-        <h2 id="contact-title" class="reveal">¿Qué hacemos con<br>esa idea que tienes<br><em>dando vueltas?</em></h2>
-        <a class="btn btn-solid reveal" href="mailto:msofia.velez@hotmail.com">Hagámosla realidad <span aria-hidden="true">→</span></a>
-        <p class="contact-signoff reveal">Marso Studio — Ideas con estela.</p>
-      </div>
-    </section>
+    <section class="area-section" id="proceso" aria-labelledby="process-title"><div class="wrap area-process"><div class="area-process-intro"><p class="eyebrow reveal">La trayectoria</p><h2 id="process-title" class="reveal">De la chispa<br>a la estela.</h2><p class="reveal">No empezamos diseñando. Empezamos buscando: una pregunta, una conversación, una idea. Lo demás lo construimos juntos.</p></div><ol class="area-process-list"><li class="area-step reveal"><span>01</span><div><h3>Descubrir</h3><p>Entender el problema, la idea y aquello que hace diferente al proyecto.</p></div></li><li class="area-step reveal"><span>02</span><div><h3>Explorar</h3><p>Investigar, experimentar y encontrar diferentes caminos visuales.</p></div></li><li class="area-step reveal"><span>03</span><div><h3>Construir</h3><p>Convertir el concepto en identidad, piezas y sistemas visuales.</p></div></li><li class="area-step reveal"><span>04</span><div><h3>Lanzar</h3><p>Llevar la idea al mundo y hacer que empiece a moverse.</p></div></li><li class="area-step reveal"><span>05</span><div><h3>Dejar estela</h3><p>Crear algo que pueda crecer, adaptarse y permanecer.</p></div></li></ol></div></section>
+    <section class="area-experiment" aria-labelledby="experiment-title"><div class="wrap area-experiment-inner"><p class="eyebrow reveal">Una señal fuera de ruta</p><h2 id="experiment-title" class="reveal">¿Y si lo hacemos<br><em>diferente?</em></h2><p class="reveal">La forma cambia, la dirección permanece.</p><button class="area-trigger reveal" type="button" aria-label="Activar una nueva señal" aria-pressed="false"><span>+</span> activar señal</button></div></section>
+    <section class="area-contact" id="contacto"><div class="wrap area-contact-inner"><p class="eyebrow reveal">Aterrizaje</p><h2 class="reveal">¿Qué hacemos con<br>esa idea que tienes<br><em>dando vueltas?</em></h2><a class="btn btn-solid reveal" href="mailto:msofia.velez@hotmail.com">Hagámosla realidad <span aria-hidden="true">→</span></a><p class="area-signoff reveal">Marso Studio — Ideas con estela.</p></div></section>
   </main>
-
-  <footer>
-    <div class="wrap foot-row">
-      <a class="brand" href="index.html"><span class="mini-spark"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>MARSO STUDIO</a>
-      <span>Branding · Publicidad · Contenido</span>
-      <span>&copy; 2026</span>
-    </div>
-  </footer>
-
-  <script src="branding.js"></script>
-  <script src="portfolio.js"></script>
+  <footer><div class="wrap foot-row"><a class="brand" href="index.html"><span class="mini-spark"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>MARSO STUDIO</a><span>Branding · Publicidad · Comunicación</span><span>&copy; 2026</span></div></footer>
+  <script src="area.js"></script>
 </body>
 </html>

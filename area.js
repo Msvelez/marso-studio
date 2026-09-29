@@ -67,4 +67,25 @@
   var trigger = document.querySelector('.area-trigger');
   var experiment = document.querySelector('.area-experiment');
   if (trigger && experiment){trigger.addEventListener('click',function(){var active = experiment.classList.toggle('is-active');trigger.setAttribute('aria-pressed',active);});}
+
+  var zoomImages = document.querySelectorAll('[data-zoom] img');
+  if (zoomImages.length && typeof HTMLDialogElement === 'function'){
+    var dialog = document.createElement('dialog');
+    dialog.className = 'area-lightbox';
+    dialog.innerHTML = '<img alt=""><p></p><button type="button" class="area-lightbox-close" aria-label="Cerrar imagen">×</button>';
+    document.body.appendChild(dialog);
+    var lightboxImage = dialog.querySelector('img');
+    var lightboxCaption = dialog.querySelector('p');
+    function openImage(image){lightboxImage.src = image.currentSrc || image.src;lightboxImage.alt = image.alt;lightboxCaption.textContent = image.alt;dialog.showModal();}
+    function closeImage(){dialog.close();}
+    dialog.addEventListener('close',function(){lightboxImage.removeAttribute('src');});
+    dialog.querySelector('.area-lightbox-close').addEventListener('click',closeImage);
+    dialog.addEventListener('click',function(event){if (event.target === dialog){closeImage();}});
+    zoomImages.forEach(function(image){
+      image.tabIndex = 0;
+      image.setAttribute('role','button');
+      image.addEventListener('click',function(){openImage(image);});
+      image.addEventListener('keydown',function(event){if (event.key === 'Enter' || event.key === ' '){event.preventDefault();openImage(image);}});
+    });
+  }
 })();
