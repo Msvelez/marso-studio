@@ -315,3 +315,19 @@ footer{position:relative;z-index:2;padding:3rem 0 2.4rem;border-top:1px solid va
   .reveal{transition:opacity .4s;transform:none;}
   .card-icon path,.card-icon rect,.card-icon circle,.card-icon polyline,.card-icon line{stroke-dashoffset:0;transition:none;}
 }
+
+/* Areas under maintenance */
+[data-soon]{position:relative;}
+.area-nav [data-soon]{opacity:.5;}.area-nav [data-soon]:hover,.area-nav [data-soon]:focus-visible{opacity:1;}
+.soon-dialog{width:min(92vw,560px);padding:3rem 2.5rem 2.5rem;background:#0a0908;color:var(--paper);border:1px solid var(--gold);border-radius:4px;overflow:hidden;text-align:left;}
+.soon-dialog::backdrop{background:rgba(0,0,0,.82);backdrop-filter:blur(3px);}
+.soon-dialog[open]{animation:soon-in .45s cubic-bezier(.2,.7,.2,1);}
+.soon-dialog h2{font-size:clamp(2.2rem,6vw,3.4rem);line-height:.92;letter-spacing:-.04em;margin:1.2rem 0 1.2rem;max-width:12ch;}
+.soon-dialog h2 em{font-style:normal;color:var(--gold);}
+.soon-text{color:var(--ash);max-width:36ch;margin-bottom:2rem;}
+.soon-orbit{position:absolute;right:-3.5rem;top:-3.5rem;width:11rem;height:11rem;border:1px solid rgba(239,200,32,.35);border-radius:50%;animation:soon-spin 9s linear infinite;}
+.soon-orbit i{position:absolute;left:50%;top:-5px;width:10px;height:10px;margin-left:-5px;border-radius:50%;background:var(--gold);box-shadow:0 0 16px var(--gold);}
+@keyframes soon-in{from{opacity:0;transform:translateY(18px) scale(.97);}}
+@keyframes soon-spin{to{transform:rotate(360deg);}}
+@media (max-width:600px){.soon-dialog{padding:2.5rem 1.5rem 1.8rem;}}
+@media (prefers-reduced-motion:reduce){.soon-dialog[open],.soon-orbit{animation:none;}}
