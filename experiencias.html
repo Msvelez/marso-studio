@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Proyectos web de Marso Studio: plataformas, campañas y relatos interactivos.">
+  <title>Experiencias Web — Marso Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="spark" viewBox="-120 -120 240 240">
+        <polygon points="0,-112 13,0 0,112 -13,0"/>
+        <polygon points="-118,0 0,-11 118,0 0,11"/>
+        <polygon points="0,-44 7,0 0,44 -7,0" transform="rotate(45)"/>
+        <polygon points="0,-44 7,0 0,44 -7,0" transform="rotate(-45)"/>
+      </symbol>
+    </defs>
+  </svg>
+
+  <canvas id="stars" aria-hidden="true"></canvas>
+  <div id="flashOverlay" aria-hidden="true"></div>
+  <div id="scrollTrail" aria-hidden="true">
+    <div class="track"></div>
+    <div class="fill" id="trailFill"></div>
+    <div class="head" id="trailHead" style="top:0%"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></div>
+  </div>
+
+  <header>
+    <a class="brand" href="index.html" aria-label="Volver a Marso Studio"><span class="mini-spark"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>MARSO STUDIO</a>
+    <nav class="links" aria-label="Navegación de experiencias web">
+      <a href="index.html#branding">Dimensiones</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="index.html#proceso">Proceso</a>
+      <a href="index.html#contacto">Contacto</a>
+    </nav>
+    <div class="status-pill"><span class="status-dot"></span>Disponible para proyectos</div>
+  </header>
+
+  <main>
+    <section class="web-projects" id="proyectos" aria-labelledby="web-projects-title">
+      <div class="wrap">
+        <div class="web-projects-intro">
+          <div>
+            <p class="eyebrow reveal">Dimensión 05 · Experiencias Web</p>
+            <h1 class="reveal" id="web-projects-title">Ideas que encontraron<br><em>su propia forma de navegar.</em></h1>
+          </div>
+          <p class="web-projects-summary reveal">Plataformas, campañas y relatos interactivos: una selección de proyectos donde el diseño web también construye la experiencia.</p>
+        </div>
+
+        <div class="web-project-grid">
+          <article class="web-project reveal" aria-labelledby="project-mision-title">
+            <a class="project-cover-link" href="https://msvelez.github.io/eleccion-representantes-2026/" target="_blank" rel="noopener noreferrer" aria-label="Ver Misión Representante">
+              <figure class="project-cover">
+                <img src="assets-web/mision-representante.jpg" alt="Captura de Misión Representante, plataforma de elección estudiantil" loading="lazy" width="1000" height="650">
+                <figcaption>01 <span>PLATAFORMA CÍVICA</span></figcaption>
+              </figure>
+            </a>
+            <div class="web-project-body">
+              <p class="project-kicker">Creación Digital · Universidad El Bosque</p>
+              <h2 id="project-mision-title">Misión Representante</h2>
+              <p class="project-description">Una elección estudiantil convertida en misión: postulación, perfiles de candidatos, votación y publicación de resultados.</p>
+              <ul class="project-stack" aria-label="Tecnologías principales"><li>Next.js 16</li><li>TypeScript</li><li>Tailwind CSS 4</li><li>Firebase</li></ul>
+              <details class="project-analysis"><summary>Análisis técnico</summary><p>Firebase Authentication verifica la identidad institucional; Firestore actualiza fases, candidaturas y votos en tiempo real, y Firebase Storage gestiona los medios. Motion anima las transiciones. Las reglas de Firestore protegen la votación y evitan el voto duplicado.</p></details>
+              <a class="project-visit" href="https://msvelez.github.io/eleccion-representantes-2026/" target="_blank" rel="noopener noreferrer">Explorar proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="web-project reveal" aria-labelledby="project-parchate-title">
+            <a class="project-cover-link" href="https://msvelez.github.io/hackathon_sb_2026/" target="_blank" rel="noopener noreferrer" aria-label="Ver Párchate">
+              <figure class="project-cover">
+                <img src="assets-web/parchate-seguros.jpg" alt="Captura de la campaña Párchate para Seguros Bolívar" loading="lazy" width="1000" height="650">
+                <figcaption>02 <span>CAMPAÑA DIGITAL</span></figcaption>
+              </figure>
+            </a>
+            <div class="web-project-body">
+              <p class="project-kicker">Hackathon · Seguros Bolívar</p>
+              <h2 id="project-parchate-title">Párchate</h2>
+              <p class="project-description">Una campaña para acercar los seguros a jóvenes con humor, situaciones cotidianas y contenido pensado para compartirse.</p>
+              <ul class="project-stack" aria-label="Tecnologías principales"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Phosphor Icons</li></ul>
+              <details class="project-analysis"><summary>Análisis técnico</summary><p>El pitch se recorre como una historia vertical por scroll, con piezas gráficas y videos 9:16. Incluye un loader Tetris animado hecho en JavaScript y una interfaz responsive. La campaña incorpora contenido creado con IA.</p></details>
+              <a class="project-visit" href="https://msvelez.github.io/hackathon_sb_2026/" target="_blank" rel="noopener noreferrer">Explorar proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="web-project reveal" aria-labelledby="project-global-title">
+            <a class="project-cover-link" href="https://msvelez.github.io/REMODELO-DE-EXPERIENCIA-DE-USUARIO-GLOBAL-SEGUROS-HACKATON-2026/" target="_blank" rel="noopener noreferrer" aria-label="Ver Global Seguros">
+              <figure class="project-cover">
+                <img src="assets-web/global-seguros.jpg" alt="Captura de la propuesta de experiencia para Global Seguros" loading="lazy" width="1000" height="650">
+                <figcaption>03 <span>EXPERIENCIA DE USUARIO</span></figcaption>
+              </figure>
+            </a>
+            <div class="web-project-body">
+              <p class="project-kicker">Hackathon · Global Seguros</p>
+              <h2 id="project-global-title">Global Seguros</h2>
+              <p class="project-description">Una propuesta para simplificar el recorrido del cliente y hacer más clara la exploración de coberturas y servicios.</p>
+              <ul class="project-stack" aria-label="Tecnologías principales"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>JSON</li></ul>
+              <details class="project-analysis"><summary>Análisis técnico</summary><p>La landing organiza el journey en pasos, beneficios y preguntas frecuentes, con animaciones de entrada mediante Intersection Observer. El prototipo de catálogo usa datos JSON y el carrito persiste en localStorage; es una simulación frontend, sin servidor, base de datos ni pagos conectados.</p></details>
+              <a class="project-visit" href="https://msvelez.github.io/REMODELO-DE-EXPERIENCIA-DE-USUARIO-GLOBAL-SEGUROS-HACKATON-2026/" target="_blank" rel="noopener noreferrer">Explorar proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="web-project reveal" aria-labelledby="project-portfolio-title">
+            <a class="project-cover-link" href="https://msvelez.github.io/Portafolio/index.html" target="_blank" rel="noopener noreferrer" aria-label="Ver el primer prototipo del portafolio">
+              <figure class="project-cover">
+                <img src="assets-web/portfolio-prototype.jpg" alt="Captura del primer prototipo del portafolio de María Sofía" loading="lazy" width="1000" height="650">
+                <figcaption>04 <span>PRIMER PORTAFOLIO</span></figcaption>
+              </figure>
+            </a>
+            <div class="web-project-body">
+              <p class="project-kicker">Prototipo personal</p>
+              <h2 id="project-portfolio-title">María Sofía · Portafolio</h2>
+              <p class="project-description">El primer prototipo para reunir trabajos de 3D, diseño de interfaces y creación digital en un mismo espacio.</p>
+              <ul class="project-stack" aria-label="Tecnologías principales"><li>HTML</li><li>CSS</li><li>Google Fonts</li></ul>
+              <details class="project-analysis"><summary>Análisis técnico</summary><p>Maquetación estática con secciones de presentación, servicios, trabajos y blog. La interfaz se apoya en Space Grotesk y estilos CSS; no carga bibliotecas JavaScript. El formulario visible es una demostración frontend, no un envío conectado.</p></details>
+              <a class="project-visit" href="https://msvelez.github.io/Portafolio/index.html" target="_blank" rel="noopener noreferrer">Explorar proyecto <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="web-project reveal" aria-labelledby="project-album-title">
+            <a class="project-cover-link" href="https://msvelez.github.io/Libro-Alb-m/" target="_blank" rel="noopener noreferrer" aria-label="Abrir El Corazón del Asesino">
+              <figure class="project-cover">
+                <img src="assets-web/libro-album.jpg" alt="Captura del libro álbum interactivo El Corazón del Asesino" loading="lazy" width="1000" height="650">
+                <figcaption>05 <span>LIBRO ÁLBUM</span></figcaption>
+              </figure>
+            </a>
+            <div class="web-project-body">
+              <p class="project-kicker">Composición plástica · Relato audiovisual</p>
+              <h2 id="project-album-title">El Corazón del Asesino</h2>
+              <p class="project-description">Una narración de suspenso inspirada en Poe, contada con páginas que se abren, imágenes y un pulso sonoro.</p>
+              <ul class="project-stack" aria-label="Tecnologías principales"><li>HTML</li><li>CSS 3D</li><li>JavaScript</li><li>Audio</li></ul>
+              <details class="project-analysis"><summary>Análisis técnico</summary><p>Las páginas giran con transformaciones CSS 3D controladas por inputs checkbox, sin librerías externas. JavaScript sincroniza la música y modifica su velocidad según la escena; el ritmo, el movimiento y el sonido construyen el suspenso.</p></details>
+              <a class="project-visit" href="https://msvelez.github.io/Libro-Alb-m/" target="_blank" rel="noopener noreferrer">Abrir libro álbum <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article class="web-project reveal" aria-labelledby="project-marso-title">
+            <a class="project-cover-link" href="index.html#hero" aria-label="Ver la experiencia Marso Studio">
+              <figure class="project-cover">
+                <img src="assets-web/marso-studio.jpg" alt="Captura de la experiencia web Marso Studio" loading="lazy" width="1440" height="960">
+                <figcaption>06 <span>ESTA EXPERIENCIA</span></figcaption>
+              </figure>
+            </a>
+            <div class="web-project-body">
+              <p class="project-kicker">Portafolio · Experiencia web actual</p>
+              <h2 id="project-marso-title">Marso Studio</h2>
+              <p class="project-description">Este mismo sitio: una identidad digital que une relato, diseño, código, 3D e ilustración en una experiencia de scroll.</p>
+              <ul class="project-stack" aria-label="Tecnologías principales"><li>HTML</li><li>CSS</li><li>JavaScript</li><li>Canvas + SVG</li></ul>
+              <details class="project-analysis"><summary>Análisis técnico</summary><p>JavaScript dibuja el campo de estrellas en Canvas y coordina las revelaciones con Intersection Observer. Un recorrido SVG responde al scroll; el parallax, la inclinación de tarjetas y el soporte para movimiento reducido completan la interacción.</p></details>
+              <a class="project-visit" href="index.html#hero">Ver esta experiencia <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap foot-row">
+      <a class="brand" href="index.html"><span class="mini-spark" style="width:12px;height:12px;"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>MARSO STUDIO</a>
+      <span>Dimensión 05 · Experiencias Web</span>
+      <span>&copy; 2026</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
