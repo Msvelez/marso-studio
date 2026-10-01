@@ -89,5 +89,5 @@
 
   var saved = 'es';
   try {saved = localStorage.getItem(STORAGE_KEY) || 'es';} catch (error) {}
-  if (saved === 'en'){setLanguage('en');}
+  if (saved === 'en'){(window.marsoProfileReady || Promise.resolve()).then(function(){setLanguage('en');});}
 })();
