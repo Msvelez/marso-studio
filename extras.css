@@ -1,0 +1,35 @@
+/* Marso Studio extras: page flash, comet cursor, sound toggle, comet rain, project filters */
+
+/* page flash transition */
+#pageFlash{position:fixed;inset:0;z-index:150;display:flex;align-items:center;justify-content:center;background:transparent;pointer-events:none;visibility:hidden;color:var(--gold);}
+#pageFlash svg{width:72px;height:72px;transform:scale(0);}
+#pageFlash.leave{visibility:visible;pointer-events:all;background:var(--gold);transition:background .3s .2s;}
+#pageFlash.leave svg{transform:scale(90);transition:transform .6s cubic-bezier(.6,0,.9,.3);}
+#pageFlash.arrive{visibility:visible;background:var(--gold);animation:flashArrive .7s ease-out forwards;}
+#pageFlash.arrive svg{display:none;}
+@keyframes flashArrive{0%{opacity:1}100%{opacity:0}}
+
+/* comet cursor */
+#cometCursor{position:fixed;inset:0;width:100%;height:100%;z-index:140;pointer-events:none;}
+
+/* sound toggle */
+#soundToggle{position:fixed;left:14px;bottom:14px;z-index:60;width:42px;height:42px;display:flex;align-items:center;justify-content:center;border:1px solid var(--line);border-radius:50%;background:rgba(10,9,8,.8);color:var(--ash);cursor:pointer;backdrop-filter:blur(4px);transition:color .25s,border-color .25s,box-shadow .25s;}
+#soundToggle svg{width:20px;height:20px;}
+#soundToggle:hover,#soundToggle:focus-visible{color:var(--paper);border-color:var(--gold);}
+#soundToggle[aria-pressed="true"]{color:var(--gold);border-color:var(--gold);box-shadow:0 0 14px rgba(239,200,32,.45);}
+
+/* easter egg */
+#cometRain{position:fixed;inset:0;width:100%;height:100%;z-index:160;pointer-events:none;}
+
+/* project filter chips */
+.project-filter{position:relative;z-index:2;display:flex;flex-wrap:wrap;gap:.6rem;align-items:center;max-width:1180px;margin:0 auto;padding:1.5rem clamp(1rem,5vw,4rem) 0;}
+.project-filter .chip-label{font-family:var(--font-mono);font-size:.7rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ash-dim);margin-right:.6rem;}
+.project-filter .chip{font-family:var(--font-mono);font-size:.74rem;color:var(--ash);background:none;border:1px solid var(--line);border-radius:99px;padding:.4em 1em;cursor:pointer;transition:color .25s,border-color .25s,background .25s;}
+.project-filter .chip:hover,.project-filter .chip:focus-visible{color:var(--paper);border-color:var(--gold);}
+.project-filter .chip[aria-pressed="true"]{background:var(--gold);color:var(--ink);border-color:var(--gold);}
+.web-project[hidden],section.area-section[hidden]{display:none!important;}
+
+@media (prefers-reduced-motion:reduce){
+  #pageFlash,#cometCursor,#cometRain{display:none!important;}
+}
+@media (max-width:760px){#soundToggle{left:10px;bottom:10px;}}

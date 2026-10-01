@@ -1,10 +1,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Marso Studio</title>
+<meta name="description" content="Marso Studio: código, 3D, branding e ilustración. La tecnología al servicio de la imaginación.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='-120 -120 240 240'%3E%3Cg fill='%23efc820'%3E%3Cpolygon points='0,-112 13,0 0,112 -13,0'/%3E%3Cpolygon points='-118,0 0,-11 118,0 0,11'/%3E%3Cpolygon points='0,-44 7,0 0,44 -7,0' transform='rotate(45)'/%3E%3Cpolygon points='0,-44 7,0 0,44 -7,0' transform='rotate(-45)'/%3E%3C/g%3E%3C/svg%3E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Marso Studio">
+<meta property="og:title" content="Marso Studio">
+<meta property="og:description" content="Marso Studio: código, 3D, branding e ilustración. La tecnología al servicio de la imaginación.">
+<meta property="og:url" content="https://msvelez.github.io/marso-studio/index.html">
+<meta property="og:image" content="https://msvelez.github.io/marso-studio/assets-web/marso-studio.jpg">
+<meta name="twitter:card" content="summary_large_image">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="extras.css">
 
 <!-- shared sparkle symbol: the Marso mark, 8-point star + long cross spikes -->
 <svg width="0" height="0" style="position:absolute">
@@ -18,12 +27,22 @@
   </defs>
 </svg>
 
+<a class="skip-link" href="#main">Saltar al contenido</a>
+
+<div id="loader" role="status" aria-live="polite"><svg viewBox="-72 -72 144 144" aria-hidden="true"><use href="#spark" fill="currentColor"/></svg><p><span>Encendiendo el destello…</span> <b id="loaderPct">0%</b></p></div>
+
 <canvas id="stars"></canvas>
 
 <div id="flashOverlay" aria-hidden="true"></div>
 <div id="scrollTrail">
   <div class="track"></div>
   <div class="fill" id="trailFill"></div>
+  <a class="stop" href="#origen" data-target="origen" aria-label="Ir a Origen"></a>
+  <a class="stop" href="#hero" data-target="hero" aria-label="Ir a Inicio"></a>
+  <a class="stop" href="#manifiesto" data-target="manifiesto" aria-label="Ir a Manifiesto"></a>
+  <a class="stop" href="#proceso" data-target="proceso" aria-label="Ir a Proceso"></a>
+  <a class="stop" href="#branding" data-target="branding" aria-label="Ir a Áreas"></a>
+  <a class="stop" href="#contacto" data-target="contacto" aria-label="Ir a Contacto"></a>
   <div class="head" id="trailHead" style="top:0%"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></div>
 </div>
 
@@ -41,7 +60,7 @@
   <div class="status-pill"><span class="status-dot"></span>Disponible para proyectos</div>
 </header>
 
-<main>
+<main id="main" tabindex="-1">
   <section class="origen" id="origen">
     <div class="wrap">
       <p class="eyebrow reveal">Antes del destello</p>
@@ -198,11 +217,12 @@
   <div class="wrap foot-row">
     <span class="brand"><span class="mini-spark" style="width:12px;height:12px;"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span>MARSO STUDIO</span>
     <span>Código · 3D · Branding · Ilustración</span>
+    <span id="localTime"></span>
     <span>&copy; 2026</span>
   </div>
 </footer>
 
 <script src="script.js"></script>
 <script src="soon.js"></script>
-<script src="i18n-en.js"></script>
+<script src="extras.js"></script><script src="i18n-en.js"></script>
 <script src="i18n.js"></script>
