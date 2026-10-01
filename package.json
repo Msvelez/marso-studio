@@ -1,0 +1,8 @@
+{
+  "name": "marso-studio",
+  "private": true,
+  "description": "Marso Studio portfolio (static site) with a local admin panel",
+  "scripts": {
+    "admin": "node admin/server.js"
+  }
+}

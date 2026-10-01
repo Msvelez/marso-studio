@@ -1,0 +1,85 @@
+{
+  "kind": "object",
+  "fields": [
+    { "key": "site", "label": "Sitio", "kind": "object", "hint": "Título de la pestaña y descripción del sitio.", "fields": [
+      { "key": "title", "label": "Título", "kind": "string" },
+      { "key": "description", "label": "Descripción", "kind": "text" }
+    ]},
+    { "key": "person", "label": "Persona", "kind": "object", "fields": [
+      { "key": "name", "label": "Nombre", "kind": "string" }
+    ]},
+    { "key": "brand", "label": "Marca", "kind": "object", "fields": [
+      { "key": "name", "label": "Nombre en mayúsculas (header y footer)", "kind": "string" },
+      { "key": "studio", "label": "Nombre del estudio", "kind": "string" },
+      { "key": "tagline", "label": "Lema del footer", "kind": "string" },
+      { "key": "year", "label": "Año del copyright", "kind": "number", "min": 2000, "max": 2100 }
+    ]},
+    { "key": "contact", "label": "Contacto", "kind": "object", "hint": "El correo se usa en el botón «Hablemos» y en el enlace de la sección Aterrizaje.", "fields": [
+      { "key": "email", "label": "Correo", "kind": "email" },
+      { "key": "availability", "label": "Mensaje de disponibilidad", "kind": "string" }
+    ]},
+    { "key": "nav", "label": "Navegación", "kind": "list", "min": 1, "max": 10, "itemLabel": "label", "hint": "Enlaces del header. Puedes agregar, quitar y reordenar.", "item": {
+      "kind": "object", "fields": [
+        { "key": "label", "label": "Texto", "kind": "string" },
+        { "key": "href", "label": "Enlace", "kind": "href", "hint": "#sección, una página como branding.html o una URL completa." }
+      ]
+    }},
+    { "key": "origin", "label": "Origen", "kind": "object", "fields": [
+      { "key": "eyebrow", "label": "Etiqueta", "kind": "string" },
+      { "key": "lines", "label": "Líneas del poema", "kind": "list", "fixedCount": 5, "item": { "kind": "text", "label": "Línea" } },
+      { "key": "closing", "label": "Frase de cierre", "kind": "string" }
+    ]},
+    { "key": "hero", "label": "Hero", "kind": "object", "fields": [
+      { "key": "eyebrow", "label": "Etiqueta", "kind": "string" },
+      { "key": "title", "label": "Título", "kind": "text", "hint": "Salto de línea = nueva línea. *cursiva* y **negrita** con asteriscos." },
+      { "key": "lede", "label": "Bajada", "kind": "text", "hint": "**negrita** con dos asteriscos." },
+      { "key": "ctaPrimary", "label": "Botón principal", "kind": "object", "fields": [
+        { "key": "label", "label": "Texto", "kind": "string" },
+        { "key": "href", "label": "Enlace", "kind": "href" }
+      ]},
+      { "key": "ctaSecondary", "label": "Botón secundario (abre el correo)", "kind": "object", "fields": [
+        { "key": "label", "label": "Texto", "kind": "string" }
+      ]},
+      { "key": "scrollCue", "label": "Indicador de scroll", "kind": "string" }
+    ]},
+    { "key": "manifesto", "label": "Manifiesto", "kind": "object", "fields": [
+      { "key": "eyebrow", "label": "Etiqueta", "kind": "string" },
+      { "key": "title", "label": "Título", "kind": "string" },
+      { "key": "paragraphs", "label": "Párrafos", "kind": "list", "fixedCount": 2, "item": { "kind": "text", "label": "Párrafo" } },
+      { "key": "badge", "label": "Texto circular del sello", "kind": "string", "max": 300 }
+    ]},
+    { "key": "process", "label": "Proceso", "kind": "object", "fields": [
+      { "key": "eyebrow", "label": "Etiqueta", "kind": "string" },
+      { "key": "title", "label": "Título", "kind": "text" },
+      { "key": "summary", "label": "Resumen", "kind": "text" },
+      { "key": "steps", "label": "Pasos", "kind": "list", "min": 1, "max": 8, "itemLabel": "title", "item": {
+        "kind": "object", "fields": [
+          { "key": "number", "label": "Número", "kind": "string", "max": 4 },
+          { "key": "title", "label": "Título", "kind": "string" },
+          { "key": "text", "label": "Descripción", "kind": "text" }
+        ]
+      }}
+    ]},
+    { "key": "areas", "label": "Mapa de áreas", "kind": "object", "fields": [
+      { "key": "eyebrow", "label": "Etiqueta", "kind": "string" },
+      { "key": "title", "label": "Título", "kind": "text" },
+      { "key": "summary", "label": "Resumen", "kind": "text" },
+      { "key": "items", "label": "Áreas", "kind": "list", "fixedCount": 5, "itemLabel": "title", "hint": "Son 5 constelaciones con forma propia; se edita su contenido, no su cantidad ni su orden.", "item": {
+        "kind": "object", "fields": [
+          { "key": "id", "label": "Identificador", "kind": "string", "readonly": true },
+          { "key": "number", "label": "Número", "kind": "string", "max": 4 },
+          { "key": "title", "label": "Título", "kind": "string" },
+          { "key": "description", "label": "Descripción", "kind": "string" },
+          { "key": "href", "label": "Enlace", "kind": "href" },
+          { "key": "status", "label": "Estado (opcional)", "kind": "string", "optional": true, "hint": "Ej. «En mantenimiento». Se muestra junto al número." },
+          { "key": "maintenance", "label": "Nombre para el aviso de mantenimiento (opcional)", "kind": "string", "optional": true, "hint": "Si lo llenas, el clic abre el aviso «en mantenimiento» en vez de navegar." }
+        ]
+      }}
+    ]},
+    { "key": "contactSection", "label": "Sección de contacto", "kind": "object", "fields": [
+      { "key": "eyebrow", "label": "Etiqueta", "kind": "string" },
+      { "key": "title", "label": "Título", "kind": "text" },
+      { "key": "lede", "label": "Texto", "kind": "text" }
+    ]}
+  ]
+}

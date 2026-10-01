@@ -1,0 +1,3 @@
+# Local admin panel: timestamped backups of profile.json and temp files
+admin/.backups/
+*.tmp

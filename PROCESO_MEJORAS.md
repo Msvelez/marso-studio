@@ -33,7 +33,9 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 | Easter egg: lluvia de cometas | Hecha | `extras.js`, `extras.css` |
 | Hora local en el footer | Hecha | `index.html`, `extras.js` |
 | Proyectos como objetos | Hecha (PR #2) | `projects.js` |
-| Perfil del home en JSON, renderizado desde ahí | Hecha | `profile.json`, `profile.js`, `index.html`, `i18n.js` |
+| Perfil del home en JSON, renderizado desde ahí | Hecha (PR #3) | `profile.json`, `profile.js`, `index.html`, `i18n.js` |
+| Panel de administración del home (CRUD) | Hecha | `admin/`, `package.json`, `.gitignore`, `profile.js` |
+| Panel para proyectos y páginas de área | Pendiente | |
 | Redes + CV en el footer | Pendiente: faltan las URLs reales | |
 | Versiones anteriores | Pendiente: faltan versiones y fechas | |
 | Bitácora de proceso | Pendiente: falta decidir quién escribe las notas | |
@@ -76,6 +78,31 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 - **Inglés:** `i18n.js` traduce por el HTML en español de cada bloque. Para que no se pisen, `profile.js` expone `window.marsoProfileReady` y `i18n.js` espera esa promesa antes de aplicar el idioma guardado. Como los textos del JSON son idénticos al HTML original, el diccionario `i18n-en.js` no cambió.
 - **Qué no se renderiza:** las etiquetas Open Graph, que los rastreadores leen sin ejecutar JavaScript, y por eso siguen en el HTML.
 
+**Panel de administración (`admin/`).** CRUD del contenido del home (`profile.json`) para editar desde el navegador, sin tocar código.
+
+*Cómo se usa:* en la carpeta del portafolio, `node admin/server.js` (o `npm run admin`) y abrir http://localhost:8766/admin/. No tiene dependencias: usa solo módulos de Node. Para cambiar el puerto: `PORT=8777 node admin/server.js`.
+
+*Por qué un servidor local:* el sitio vive en GitHub Pages, que es hosting estático y no puede guardar datos. El servidor escribe directamente en `profile.json` de tu computador; después se publica con git (el panel muestra el comando tras cada guardado). El panel también está dentro del sitio publicado, pero allí no encuentra el servidor y solo muestra las instrucciones: no puede modificar nada.
+
+| Archivo | Para qué sirve |
+|---|---|
+| `admin/server.js` | Sirve el sitio y una API (`/api/profile`, `/api/backups`, `/api/restore`). Valida, hace respaldo y escribe de forma atómica (archivo temporal + rename). |
+| `admin/profile.schema.json` | Describe cada campo (tipo, etiqueta, ayuda, obligatorio, mínimos y máximos, listas de cantidad fija). El formulario y la validación salen de aquí. |
+| `admin/validate.js` | El mismo validador corre en el servidor y en el navegador: lo que el panel acepta es lo que el servidor acepta. |
+| `admin/index.html`, `admin.js`, `admin.css` | La interfaz: formulario generado desde el esquema, índice lateral y vista previa. |
+
+*Qué permite (CRUD):*
+- **Leer:** carga `profile.json` y arma un formulario por sección.
+- **Editar (Update):** validación en vivo con el error bajo cada campo, contador de errores y marca en el índice lateral. Vista previa en vivo en un iframe con el borrador sin guardar (por `postMessage`; `profile.js` vuelve a pintar). Ctrl+S guarda.
+- **Crear y borrar (Create/Delete):** en `nav` y `process.steps` se puede agregar, borrar (con confirmación de dos clics) y reordenar con ▲▼. Las listas de cantidad fija (`origin.lines`, `manifesto.paragraphs`, `areas.items`) muestran "cantidad fija": su contenido se edita, pero no su número ni su orden, porque el diseño depende de ello. Los campos opcionales (`status`, `maintenance`) se borran dejándolos vacíos.
+- **Respaldos y restauración:** cada guardado copia la versión anterior a `admin/.backups/` (se conservan 20 y la carpeta está en `.gitignore`). Se restaura desde el selector; restaurar también respalda el estado actual.
+- **Descartar cambios** y aviso si cierras la pestaña con cambios sin guardar.
+- **Control de versiones:** si `profile.json` cambió en el disco desde que abriste el panel (por ejemplo, editado a mano o por un `git pull`), el guardado responde 409 y no pisa nada.
+
+*Seguridad:* el servidor escucha solo en 127.0.0.1; rechaza cualquier `Host` que no sea localhost (contra DNS rebinding); las escrituras exigen la cabecera `X-Requested-With` y un `Origin` propio (así una página ajena no puede escribir); nunca sirve carpetas que empiezan con punto (`.git`, `.backups`), `node_modules` ni `server.js`; los nombres de respaldo se validan con una expresión estricta; el cuerpo de las peticiones se limita a 1 MB. Los textos del JSON se escapan al pintarse (no se interpreta HTML).
+
+*Dos detalles:* el primer guardado reescribe `profile.json` con formato estándar de 2 espacios, así que el diff de git de ese primer cambio será más grande de lo que cambió el contenido. Las claves que el esquema no conoce se conservan.
+
 ## 4. Problemas encontrados
 
 | Problema | Causa | Solución |
@@ -83,12 +110,15 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 | Las paradas de la barra no recibían posición y el clic no navegaba | `index.html` no tiene `<!DOCTYPE html>`, así que el navegador usa modo quirks y `documentElement.clientHeight` devuelve la altura de toda la página | Usar `document.scrollingElement` y `window.innerHeight`. Se aplicó también a la barra de progreso original, que daba `NaN`. **No** se agregó el doctype porque podría alterar el diseño de todo el sitio |
 | Los textos del mapa se montaban sobre las figuras | La zona clicable estaba alineada al fondo y tapaba la parte baja de la constelación | Alinear el texto al inicio con `padding-top:12rem` y ajustar alto y ancho de la zona |
 | Al renderizar desde el JSON, el mapa de áreas salía corrido un lugar (Branding mostraba "Diseño Digital") y el aviso de mantenimiento no aparecía | `script.js` inserta un `<canvas>` como primer hijo de `.area-map` y la lista lo contaba como un elemento | `profile.js` solo trata como elementos de la lista los hijos que tienen atributos `data-profile*` |
+| Los respaldos hechos en el mismo segundo se ordenaban mal (`X.json` quedaba después de `X-1.json`), así que "el más antiguo" y la poda de los 20 podían equivocarse | La coma y el guion se comparan distinto al ordenar nombres alfabéticamente | Los nombres tienen ancho fijo: fecha, hora, milisegundos y un contador (`profile-20261001-145945-020-00.json`), por lo que ordenar por nombre es ordenar por tiempo |
+| Las tarjetas de las listas decían "Elemento 2" en vez de su título | Los títulos se calculaban antes de que el formulario estuviera dentro de la página | Se calculan después de montar el formulario |
 | Los archivos mezclan finales de línea (LF y CRLF) | Edición desde distintos editores en Windows | Los parches se hicieron con scripts que tratan ambos; `git diff --stat` confirma que no hay reescrituras completas |
 
 ## 5. Cómo se verificó
 
 - Servidor local con `npx http-server` y Chrome automatizado (`puppeteer-core`).
 - Comprobado en `extras.js`: hora local, metadatos, botón de sonido (activar/silenciar), Konami y 5 clics en el logo, transición entre páginas (clase `leave` al salir y `arrive` al llegar) y filtros (HTML 5/6, CSS 4/6, JavaScript 4/6 proyectos visibles; "Todos" restaura 6/6).
+- Panel: API con 39 comprobaciones (lectura, guardado válido, validación, conflicto 409, respaldos, restauración, seguridad y archivos estáticos) y panel en Chrome con 50 (formulario, validación en vivo, vista previa sin guardar, agregar/mover/borrar, listas fijas, campo opcional, Ctrl+S, restaurar, descartar, conflicto y poda a 20 respaldos). Después de las pruebas, `profile.json` quedó idéntico al original.
 - Perfil en JSON: 76 elementos comparados entre la página con el JSON bloqueado (texto original del HTML) y la renderizada desde `profile.json`, con 0 diferencias. También se probó cambiar el JSON (título, correo en los dos enlaces `mailto`, año del footer, un quinto paso de proceso, una etiqueta de la nav), el inglés encima del texto renderizado y el aviso de "En mantenimiento" de Diseño Digital.
 - Comprobado: loader llega a `ignite done`, las 6 paradas tienen posición, el clic en "Proceso" deja esa sección arriba, la nav cambia de activa, el mapa se activa en 1400 px y se desactiva en 390 px, y no hay errores de JavaScript.
 - Revisión visual con capturas del loader, la nav activa y el mapa en hover.
@@ -101,6 +131,8 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 - Probar el toggle ES/EN con los textos nuevos.
 - Confirmar que `og:image` se ve bien al compartir el link (se puede revisar con el depurador de vista previa de Facebook o LinkedIn una vez publicado).
 - Probar en un celular real: el mapa se desactiva por ancho, pero no se probó con pantalla táctil.
+- Panel, siguientes entregas: (2) migrar `projects.js` a `projects.json`, pintar `experiencias.html` desde ahí y agregar su CRUD; (3) lo mismo para branding, motion, lab y digital. Sin esas migraciones el panel solo puede administrar el home.
+- Si algún día se quiere editar desde fuera de tu computador, habría que cambiar el guardado (por ejemplo a la API de GitHub con un token) o alojar el servidor.
 - Extender el mismo mecanismo a las páginas de área (hero, proceso, contacto de cada una) y a los proyectos, leyendo `projects.js`.
 - Agregar redes y CV a `profile.json` cuando estén los datos.
 - Decidir si se agrega `<!DOCTYPE html>` y se revisa el diseño en modo estándar.
