@@ -1,0 +1,84 @@
+{
+  "site": {
+    "title": "Marso Studio",
+    "description": "Marso Studio: código, 3D, branding e ilustración. La tecnología al servicio de la imaginación."
+  },
+  "person": {
+    "name": "María Sofía"
+  },
+  "brand": {
+    "name": "MARSO STUDIO",
+    "studio": "Marso Studio",
+    "tagline": "Código · 3D · Branding · Ilustración",
+    "year": 2026
+  },
+  "contact": {
+    "email": "msofia.velez@hotmail.com",
+    "availability": "Disponible para proyectos"
+  },
+  "nav": [
+    { "label": "Origen", "href": "#origen" },
+    { "label": "Manifiesto", "href": "#manifiesto" },
+    { "label": "Proceso", "href": "#proceso" },
+    { "label": "Proyectos", "href": "experiencias.html" },
+    { "label": "Áreas", "href": "#branding" },
+    { "label": "Branding", "href": "branding.html" },
+    { "label": "Contacto", "href": "#contacto" }
+  ],
+  "origin": {
+    "eyebrow": "Antes del destello",
+    "lines": [
+      "El resplandor de algo que fue y todavía arde.",
+      "Fragmentos de luz dispersos en la oscuridad,",
+      "destellos que laten antes de apagarse.",
+      "Aquí no hay líneas rectas, no hay respuestas obvias —",
+      "solo rastros de fuego esperando ser descubiertos."
+    ],
+    "closing": "Mira de cerca. Algo está a punto de revelarse."
+  },
+  "hero": {
+    "eyebrow": "Punto de ignición",
+    "title": "Diseño que arde\ncomo *cometa*.",
+    "lede": "La tecnología al servicio de la imaginación — **Marso Studio** es código, 3D, branding e ilustración con una sola trayectoria: dejar una estela.",
+    "ctaPrimary": { "label": "Explorar áreas", "href": "#branding" },
+    "ctaSecondary": { "label": "Hablemos" },
+    "scrollCue": "Desplázate"
+  },
+  "manifesto": {
+    "eyebrow": "Trayectoria",
+    "title": "Manifiesto",
+    "paragraphs": [
+      "**Marso Studio** es un ecosistema creativo donde la tecnología está al servicio de la imaginación, y no al revés. Creemos en un diseño que se sienta humano: imperfecto, consciente y auténtico.",
+      "Nuestra misión es dar forma a experiencias digitales que amplifiquen la vida, la emoción y el significado. Porque crear es ser libre, y la libertad comienza con un diseño que recuerda su humanidad."
+    ],
+    "badge": "EVERY DESIGN THAT SHINES WAS ONCE SET ON FIRE BY PASSION ◆ EVERY DESIGN THAT SHINES WAS ONCE SET ON FIRE BY PASSION ◆"
+  },
+  "process": {
+    "eyebrow": "Del primer destello al resultado",
+    "title": "Una idea no aparece hecha.\n*Se descubre en el camino.*",
+    "summary": "Cada proyecto parte de una conversación y avanza con intención: entender qué importa, encontrar una dirección propia y convertirla en algo que pueda vivir en el mundo.",
+    "steps": [
+      { "number": "01", "title": "Escuchar y observar", "text": "Conocemos la idea, las personas a las que quiere llegar y el contexto que le da sentido." },
+      { "number": "02", "title": "Explorar posibilidades", "text": "Investigamos referencias y probamos caminos hasta encontrar una dirección con carácter." },
+      { "number": "03", "title": "Dar forma al concepto", "text": "Desarrollamos el lenguaje visual y las piezas necesarias para que la idea se sienta coherente y propia." },
+      { "number": "04", "title": "Activar y compartir", "text": "Pulimos los detalles y preparamos el resultado para encontrarse con su audiencia, en cada formato." }
+    ]
+  },
+  "areas": {
+    "eyebrow": "Mapa de señales",
+    "title": "Cinco dimensiones,\n*una misma estela.*",
+    "summary": "Cada idea encuentra una forma distinta de atravesar el universo de Marso.",
+    "items": [
+      { "id": "branding", "number": "01", "title": "Branding + Publicidad", "description": "Ideas que encuentran su forma.", "href": "branding.html" },
+      { "id": "digital", "number": "02", "title": "Diseño Digital", "description": "Ideas que encuentran su espacio.", "href": "digital.html", "status": "En mantenimiento", "maintenance": "Diseño Digital" },
+      { "id": "motion", "number": "03", "title": "Contenido + Motion", "description": "Ideas que empiezan a moverse.", "href": "motion.html" },
+      { "id": "3d", "number": "04", "title": "3D + Exploración", "description": "Modelado, animación y texturas.", "href": "lab.html" },
+      { "id": "web", "number": "05", "title": "Experiencias Web", "description": "Proyectos digitales para explorar.", "href": "experiencias.html" }
+    ]
+  },
+  "contactSection": {
+    "eyebrow": "Aterrizaje",
+    "title": "¿Le damos forma\na algo juntos?",
+    "lede": "Un proyecto de código, 3D, branding o ilustración empieza con un mensaje. Cuéntame por dónde va tu idea."
+  }
+}
