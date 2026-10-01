@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Panel · Marso Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <header class="bar">
+    <div class="bar-brand"><span class="dot" aria-hidden="true"></span>Marso Studio <em>· panel</em></div>
+    <div id="status" class="status" role="status" aria-live="polite">Cargando…</div>
+    <div class="bar-actions">
+      <label class="backups"><span class="sr-only">Respaldos</span>
+        <select id="backups" aria-label="Respaldos anteriores"><option value="">Respaldos…</option></select>
+      </label>
+      <button type="button" id="restore" class="btn" disabled>Restaurar</button>
+      <button type="button" id="discard" class="btn">Descartar cambios</button>
+      <button type="button" id="save" class="btn btn-solid" disabled>Guardar <kbd>Ctrl S</kbd></button>
+    </div>
+  </header>
+
+  <div id="offline" class="offline" hidden>
+    <h1>No encuentro el servidor local</h1>
+    <p>Este panel guarda en los archivos de tu computador, así que necesita el servidor de administración. En la carpeta <code>portafolio</code> ejecuta:</p>
+    <pre>node admin/server.js</pre>
+    <p>y abre <a href="http://localhost:8766/admin/">http://localhost:8766/admin/</a>.</p>
+  </div>
+
+  <div id="app" class="layout" hidden>
+    <nav id="toc" class="toc" aria-label="Secciones"></nav>
+    <main id="form" class="form"></main>
+    <aside class="preview" aria-label="Vista previa">
+      <div class="preview-bar"><span>Vista previa en vivo <small>(sin guardar)</small></span><a href="/" target="_blank" rel="noopener">Abrir sitio ↗</a></div>
+      <iframe id="preview" src="/index.html" title="Vista previa del home"></iframe>
+    </aside>
+  </div>
+
+  <section id="publish" class="publish" hidden>
+    <strong>Guardado en <code>profile.json</code>.</strong> Para publicarlo en GitHub:
+    <code id="gitcmd">git add profile.json &amp;&amp; git commit -m "Update profile content" &amp;&amp; git push</code>
+    <button type="button" id="copycmd" class="btn">Copiar</button>
+    <button type="button" id="closepublish" class="btn" aria-label="Cerrar aviso">✕</button>
+  </section>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="validate.js"></script>
+  <script src="admin.js"></script>
+</body>
+</html>

@@ -13,6 +13,7 @@
 (function(){
   var URL = 'profile.json';
   var root = null;
+  var previewed = false; // true once the admin panel has pushed an unsaved draft: the late fetch must not overwrite it
 
   function lookup(path, scope){
     if (path === '.') return scope.item;
@@ -112,9 +113,16 @@
     document.dispatchEvent(new CustomEvent('marso:profile', {detail: data}));
   }
 
+  // Live preview from the admin panel (same origin only): re-renders with the unsaved draft
+  window.addEventListener('message', function(e){
+    if (e.origin !== location.origin || !e.data || e.data.type !== 'marso:profile-preview' || !e.data.data) return;
+    previewed = true;
+    render(e.data.data);
+  });
+
   // i18n.js waits for this promise before applying the saved language, so English is applied on top of the rendered text
   window.marsoProfileReady = fetch(URL, {cache: 'no-cache'})
     .then(function(r){ if (!r.ok) throw new Error('HTTP ' + r.status); return r.json(); })
-    .then(render)
+    .then(function(data){ if (!previewed) render(data); })
     .catch(function(err){ console.warn('[profile] se mantiene el texto del HTML (' + err.message + ')'); });
 })();
