@@ -1,6 +1,10 @@
 // English translations for i18n.js, keyed by the normalized Spanish HTML of each text block.
 window.MARSO_EN = {
  "html": {
+  "Filtrar por tecnología": "Filter by technology",
+  "Todos": "All",
+  "Saltar al contenido": "Skip to content",
+  "Encendiendo el destello…": "Igniting the flash…",
   "Origen": "Origin",
   "Manifiesto": "Manifesto",
   "Proceso": "Process",
@@ -519,6 +523,13 @@ window.MARSO_EN = {
   "Plataformas · Campañas · Relatos interactivos": "Platforms · Campaigns · Interactive stories"
  },
  "attr": {
+  "Filtrar por tecnología": "Filter by technology",
+  "Ir a Origen": "Go to Origin",
+  "Ir a Inicio": "Go to Start",
+  "Ir a Manifiesto": "Go to Manifesto",
+  "Ir a Proceso": "Go to Process",
+  "Ir a Áreas": "Go to Areas",
+  "Ir a Contacto": "Go to Contact",
   "Volver a Marso Studio": "Back to Marso Studio",
   "Áreas de Marso": "Marso areas",
   "Poster principal de la campaña de Un paso en falso": "Main poster for the Un paso en falso campaign",
