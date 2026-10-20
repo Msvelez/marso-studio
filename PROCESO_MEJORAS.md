@@ -136,3 +136,18 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 - Extender el mismo mecanismo a las páginas de área (hero, proceso, contacto de cada una) y a los proyectos, leyendo `projects.js`.
 - Agregar redes y CV a `profile.json` cuando estén los datos.
 - Decidir si se agrega `<!DOCTYPE html>` y se revisa el diseño en modo estándar.
+
+## 4. Ronda 2026-10-20: vitrina, sobre mí y trabajos nuevos
+
+| Mejora | Archivos |
+|---|---|
+| Vitrina de 8 imágenes justo después del hero (mosaico sin huecos en escritorio y móvil) | `index.html`, `style.css`, `assets-home/` |
+| Sección "Sobre mí" con nombre, rol, proyectos actuales, herramientas e idiomas | `index.html`, `style.css` |
+| Voz en primera persona en hero, manifiesto y proceso; pill "Abierta a prácticas" | `index.html`, `profile.json` |
+| GitHub en "Sobre mí" y en contacto | `index.html`, `style.css` |
+| Diseño Digital deja de estar en mantenimiento: Adicción Digital + prototipos Reflections y Asértika (antes eran tarjetas de relleno) | `digital.html`, `area.css`, `profile.json`, `assets-digital/` |
+| Fab Lab: Renito y gatos en CNC | `lab.html`, `area.css`, `assets-3d/fablab/` |
+| Tipografía (Humanismo Digital) y editorial Wes Anderson | `branding.html`, `area.css`, `assets-publicidad/tipografia/`, `assets-publicidad/editorial/` |
+| Traducciones al inglés de todo lo nuevo; proyectos nuevos en el modelo de datos | `i18n-en.js`, `projects.js` |
+
+Pendiente: URL de LinkedIn y PDF de la hoja de vida para enlazarlos en "Sobre mí" y contacto.

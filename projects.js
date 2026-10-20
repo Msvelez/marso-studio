@@ -5,7 +5,7 @@
    Project shape
      id        unique slug
      title     name as shown on the site
-     area      'web' | 'branding' | 'motion' | '3d'      (see MARSO_PROJECTS.areas)
+     area      'web' | 'digital' | 'branding' | 'motion' | '3d'      (see MARSO_PROJECTS.areas)
      category  slug inside the area                       (see MARSO_PROJECTS.categories)
      summary   one-line description from the site
      page      where it lives on this site (file + anchor)
@@ -15,6 +15,7 @@
 (function(){
   var areas = {
     web:      {label: 'Experiencias Web',      page: 'experiencias.html'},
+    digital:  {label: 'Diseño Digital',        page: 'digital.html'},
     branding: {label: 'Branding + Publicidad', page: 'branding.html'},
     motion:   {label: 'Contenido + Motion',    page: 'motion.html'},
     '3d':     {label: '3D + Exploración',      page: 'lab.html'}
@@ -26,11 +27,15 @@
     'interactive-story':   {area: 'web', label: 'Relato interactivo'},
     'portfolio-prototype': {area: 'web', label: 'Portafolios + prototipos'},
 
+    'research-creation':   {area: 'digital', label: 'Investigación-creación'},
+
     'campaign':            {area: 'branding', label: 'Campañas'},
     'advertising':         {area: 'branding', label: 'Publicidad'},
     'communication':       {area: 'branding', label: 'Comunicación'},
     'identity':            {area: 'branding', label: 'Identidad'},
     'illustration':        {area: 'branding', label: 'Ilustración'},
+    'typography':          {area: 'branding', label: 'Tipografía'},
+    'editorial':           {area: 'branding', label: 'Editorial'},
 
     'experimental-short':  {area: 'motion', label: 'Corto experimental'},
     'video-campaign':      {area: 'motion', label: 'Campañas en video'},
@@ -40,7 +45,8 @@
 
     'animated-series':     {area: '3d', label: 'Serie animada 3D'},
     'animation':           {area: '3d', label: 'Animación + texturas'},
-    'digital-sculpture':   {area: '3d', label: 'Escultura digital'}
+    'digital-sculpture':   {area: '3d', label: 'Escultura digital'},
+    'digital-fabrication': {area: '3d', label: 'Fabricación digital'}
   };
 
   var list = [
@@ -279,6 +285,51 @@
       cover: 'assets-publicidad/ilustracion/vector-01.jpg'
     },
 
+    {
+      id: 'manifiestos-tipograficos',
+      title: 'Manifiestos tipográficos',
+      area: 'branding', category: 'typography',
+      context: 'Humanismo Digital · Universidad El Bosque',
+      type: 'Afiches tipográficos',
+      summary: 'Una serie de afiches donde la tipografía se estira, se curva y se rompe para defender lo humano frente a lo artificial.',
+      pieces: [
+        {title: 'Soy creadora digital', image: 'assets-publicidad/tipografia/creadora-digital.jpg'},
+        {title: 'No soy una métrica', image: 'assets-publicidad/tipografia/no-soy-una-metrica.jpg'},
+        {title: 'Lo meramente humano', image: 'assets-publicidad/tipografia/meramente-humano.jpg'},
+        {title: 'La voz y la cámara', type: 'Ilustración', image: 'assets-publicidad/tipografia/camara.jpg'}
+      ],
+      page: 'branding.html#tipografia',
+      cover: 'assets-publicidad/tipografia/no-soy-una-metrica.jpg'
+    },
+    {
+      id: 'wes-anderson-editorial',
+      title: 'El color de Wes Anderson',
+      area: 'branding', category: 'editorial',
+      context: 'Composición Plástica · Universidad El Bosque',
+      type: 'Diseño editorial',
+      summary: 'Un análisis editorial de la paleta de The Grand Budapest Hotel y un póster propio a partir de esa paleta.',
+      pieces: [
+        {title: 'Póster The Grand Budapest Hotel', image: 'assets-publicidad/editorial/wes-anderson-poster.jpg'},
+        {title: 'Un estilo que se reconoce', image: 'assets-publicidad/editorial/wes-anderson-intro.jpg'},
+        {title: 'La paleta del hotel', image: 'assets-publicidad/editorial/wes-anderson-paleta-rosa.jpg'},
+        {title: 'Paleta complementaria', image: 'assets-publicidad/editorial/wes-anderson-paleta-complementaria.jpg'}
+      ],
+      page: 'branding.html#editorial',
+      cover: 'assets-publicidad/editorial/wes-anderson-poster.jpg'
+    },
+
+    /* ---------- digital: digital.html ---------- */
+    {
+      id: 'adiccion-digital',
+      title: 'Adicción Digital',
+      area: 'digital', category: 'research-creation',
+      context: 'Investigación Creación 1 · Universidad El Bosque',
+      type: 'Investigación-creación · pieza gráfica + podcast',
+      summary: '¿Hasta qué punto el diseño UX se convierte en una estrategia que fomenta la adicción digital? Una investigación sobre ética, interactividad y comportamiento.',
+      page: 'digital.html#adiccion-digital',
+      cover: 'assets-digital/adiccion-digital-portada.jpg'
+    },
+
     /* ---------- motion: motion.html ---------- */
     {
       id: 'inmutable',
@@ -403,6 +454,23 @@
       summary: 'Una criatura de tentáculos atraviesa un cuadro y arrastra rostros esculpidos consigo: un ejercicio de anatomía, pliegue y composición.',
       page: 'lab.html#esculturas',
       cover: 'assets-3d/modelado/escultura-tentaculos-marco.gif'
+    },
+    {
+      id: 'renito',
+      title: 'Renito',
+      area: '3d', category: 'digital-fabrication',
+      context: 'Fab Lab · Universidad El Bosque',
+      type: 'Fabricación digital · CNC',
+      tools: ['Vectric Aspire', 'Mini router CNC'],
+      summary: 'Un reno de piezas encajables: simulado en Vectric Aspire, mecanizado en madera con una mini router CNC, lijado y pintado.',
+      pieces: [
+        {title: 'Simulación', image: 'assets-3d/fablab/renito-simulacion.jpg'},
+        {title: 'Mecanizado', image: 'assets-3d/fablab/renito-madera.jpg'},
+        {title: 'Acabado', image: 'assets-3d/fablab/renito-pintado.jpg'},
+        {title: 'Gatos tallados en CNC', image: 'assets-3d/fablab/gatos-madera.jpg'}
+      ],
+      page: 'lab.html#fablab',
+      cover: 'assets-3d/fablab/renito-pintado.jpg'
     }
   ];
 

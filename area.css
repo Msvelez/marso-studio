@@ -60,3 +60,17 @@
 @media (max-width:900px){.area-header .area-nav{display:none;}.area-hero-grid,.area-process{grid-template-columns:1fr;}.area-visual{height:52vw;min-height:260px;max-height:410px;margin-top:-1rem;}.area-process{gap:4rem;}.area-project-tall{margin-top:4rem;}.area-heading>p:last-child{max-width:32ch;}.juken-grid,.area-case-grid{grid-template-columns:1fr;}.juken-figure-detail{max-width:100%;justify-self:stretch;}}
 @media (max-width:700px){.area-header{padding:1rem 1.5rem;}.area-back{font-size:0;}.area-back span{font-size:1.2rem;margin:0;}.area-hero{padding-top:8rem;}.area-hero h1{font-size:clamp(3.8rem,15vw,7rem);}.area-hero-foot{font-size:.56rem;}.area-hero-foot span:first-child{max-width:24ch;}.area-pause{min-height:68vh;}.pause-note{margin-left:0;}.area-territory{grid-template-columns:2.2rem minmax(0,1fr) 2rem;gap:1rem;}.territory-shape{display:none;}.area-territory-copy strong{font-size:2rem;}.area-territory-copy span{font-size:1rem;}.area-territory-copy small{font-size:.58rem;line-height:1.5;}.area-projects{display:block;}.area-project{margin-bottom:3rem;}.area-project-tall,.area-project-small{margin-top:0;max-width:100%;}.juken-target ul{grid-template-columns:1fr;}.juken-deck{margin-top:3.5rem;}.area-experiment{min-height:62vh;}.area-contact{padding-bottom:6rem;}.area-contact h2{font-size:clamp(2.8rem,13vw,5rem);}}
 @media (prefers-reduced-motion:reduce){.area-visual *, .lab-object{animation:none!important;}.area-web .project-cover-link:hover .project-cover img{transform:none;}.area-project:hover .area-art{transform:none;}.area-territory::before{transition:none;}.area-page .reveal{transition:opacity .4s;transform:none;}}
+
+/* New sections (2026-10): typography series, editorial, Fab Lab, Adicción Digital */
+.brand-type,.brand-editorial{grid-template-columns:repeat(4,minmax(0,1fr));}
+.brand-editorial .area-figure:nth-child(even),.brand-type .area-figure:nth-child(even){margin-top:3rem;}
+.fablab-row{grid-template-columns:1fr 1fr;align-items:end;margin-top:1.5rem;}
+.digital-keys{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line);}
+.digital-keys li{padding:1.3rem 0;display:flex;flex-direction:column;gap:.35rem;border-bottom:1px solid var(--line);}
+.digital-case{grid-template-columns:.8fr 1.2fr;align-items:center;}.digital-case-copy .eyebrow{margin-bottom:1.2rem;}
+.digital-protos{grid-template-columns:1fr;max-width:62rem;}
+.digital-keys strong{font-family:var(--font-display);font-size:1.25rem;font-weight:600;color:var(--area-accent,var(--gold));}
+.digital-keys span{color:var(--ash);font-size:.95rem;}
+.area-digital .area-case-grid .area-deck-window{max-height:min(78vh,44rem);}
+@media (max-width:900px){.brand-type,.brand-editorial{grid-template-columns:repeat(2,minmax(0,1fr));}.brand-editorial .area-figure:nth-child(even),.brand-type .area-figure:nth-child(even){margin-top:2rem;}.digital-case{grid-template-columns:1fr;}}
+@media (max-width:560px){.fablab-row{grid-template-columns:1fr;}}

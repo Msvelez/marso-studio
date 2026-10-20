@@ -39,6 +39,8 @@
   <div class="fill" id="trailFill"></div>
   <a class="stop" href="#origen" data-target="origen" aria-label="Ir a Origen"></a>
   <a class="stop" href="#hero" data-target="hero" aria-label="Ir a Inicio"></a>
+  <a class="stop" href="#vitrina" data-target="vitrina" aria-label="Ir a la vitrina"></a>
+  <a class="stop" href="#sobre-mi" data-target="sobre-mi" aria-label="Ir a Sobre mí"></a>
   <a class="stop" href="#manifiesto" data-target="manifiesto" aria-label="Ir a Manifiesto"></a>
   <a class="stop" href="#proceso" data-target="proceso" aria-label="Ir a Proceso"></a>
   <a class="stop" href="#branding" data-target="branding" aria-label="Ir a Áreas"></a>
@@ -57,7 +59,7 @@
     <a href="branding.html" data-profile=".label" data-profile-href=".href">Branding</a>
     <a href="#contacto" data-profile=".label" data-profile-href=".href">Contacto</a>
   </nav>
-  <div class="status-pill" data-profile-text="contact.availability"><span class="status-dot"></span>Disponible para proyectos</div>
+  <div class="status-pill" data-profile-text="contact.availability"><span class="status-dot"></span>Abierta a prácticas</div>
 </header>
 
 <main id="main" tabindex="-1">
@@ -107,12 +109,54 @@
       </div>
       <p class="eyebrow" data-profile="hero.eyebrow" style="opacity:0;animation:rise 1s cubic-bezier(.2,.7,.2,1) 0.3s forwards;">Punto de ignición</p>
       <h1 data-profile="hero.title">Diseño que arde<br>como <em>cometa</em>.</h1>
-      <p class="lede" data-profile="hero.lede">La tecnología al servicio de la imaginación — <strong>Marso Studio</strong> es código, 3D, branding e ilustración con una sola trayectoria: dejar una estela.</p>
+      <p class="lede" data-profile="hero.lede">Soy <strong>María Sofía Vélez</strong>, estudiante de Creación Digital. <strong>Marso Studio</strong> es mi estudio: código, 3D, branding e ilustración con una sola trayectoria, dejar una estela.</p>
       <div class="cta-row">
-        <a href="#branding" class="btn btn-solid" data-profile="hero.ctaPrimary.label" data-profile-href="hero.ctaPrimary.href">Explorar áreas</a>
+        <a href="#vitrina" class="btn btn-solid" data-profile="hero.ctaPrimary.label" data-profile-href="hero.ctaPrimary.href">Ver mi trabajo</a>
         <a href="mailto:msofia.velez@hotmail.com" class="btn btn-ghost" data-profile="hero.ctaSecondary.label" data-profile-href="mailto:{contact.email}">Hablemos</a>
       </div>
       <div class="scroll-cue" data-profile-text="hero.scrollCue"><span class="line"></span>Desplázate</div>
+    </div>
+  </section>
+
+  <section class="showcase" id="vitrina" aria-labelledby="showcase-title">
+    <div class="wrap">
+      <div class="showcase-head">
+        <p class="eyebrow reveal">Vitrina</p>
+        <h2 class="reveal" id="showcase-title">Un vistazo rápido<br>a lo que <em>hago.</em></h2>
+        <p class="showcase-note reveal">Ocho piezas, cinco áreas. Toca cualquiera para ver el proyecto completo.</p>
+      </div>
+      <div class="showcase-grid">
+        <a class="showcase-item is-wide reveal" href="experiencias.html#campanas"><img src="assets-home/global-seguros.jpg" alt="Personajes 3D de una madre y su hijo junto al lema de Global Seguros, protección que te acompaña siempre" width="720" height="540" loading="lazy" decoding="async"><span class="showcase-cap"><small>Experiencias Web</small><strong>Global Seguros</strong></span></a>
+        <a class="showcase-item is-tall reveal" href="lab.html#juken"><img src="assets-home/juken.jpg" alt="Escultura digital de Avgi en T-pose, en gris sobre una cuadrícula magenta" width="720" height="960" loading="lazy" decoding="async"><span class="showcase-cap"><small>3D + Exploración</small><strong>JUKEN</strong></span></a>
+        <a class="showcase-item is-wide reveal" href="digital.html#adiccion-digital"><img src="assets-home/adiccion-digital.jpg" alt="Portada tipográfica de Adicción Digital junto a un celular con un perfil de red social" width="720" height="540" loading="lazy" decoding="async"><span class="showcase-cap"><small>Diseño Digital</small><strong>Adicción Digital</strong></span></a>
+        <a class="showcase-item is-tall reveal" href="branding.html#posters"><img src="assets-home/poster-ladygaga.jpg" alt="Póster en blanco y negro de Lady Gaga para Estéreo Picnic, con una mano cubriéndole el rostro" width="720" height="960" loading="lazy" decoding="async"><span class="showcase-cap"><small>Branding + Publicidad</small><strong>Póster Estéreo Picnic</strong></span></a>
+        <a class="showcase-item is-tall reveal" href="branding.html#tipografia"><img src="assets-home/tipografia.jpg" alt="Afiche tipográfico en negro sobre crema: no soy una métrica, mi valor está en mi autenticidad" width="720" height="960" loading="lazy" decoding="async"><span class="showcase-cap"><small>Ilustración + Tipografía</small><strong>Manifiestos tipográficos</strong></span></a>
+        <a class="showcase-item is-wide reveal" href="experiencias.html#campanas"><img src="assets-home/parchate.jpg" alt="Mockup de un celular con publicaciones de la campaña Párchate de Seguros Bolívar" width="720" height="540" loading="lazy" decoding="async"><span class="showcase-cap"><small>Campaña digital</small><strong>Párchate</strong></span></a>
+        <a class="showcase-item is-tall reveal" href="lab.html#fablab"><img src="assets-home/renito.jpg" alt="Una mano sostiene a Renito, un reno de madera encajable pintado de verde, rosa y azul" width="720" height="960" loading="lazy" decoding="async"><span class="showcase-cap"><small>Fabricación digital</small><strong>Renito</strong></span></a>
+        <a class="showcase-item is-wide reveal" href="motion.html#inmutable"><img src="assets-home/inmutable.jpg" alt="Fotograma del corto Inmutable: un objeto blanco semienterrado en tierra oscura" width="720" height="540" loading="lazy" decoding="async"><span class="showcase-cap"><small>Contenido + Motion</small><strong>Inmutable</strong></span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="sobre-mi" aria-labelledby="about-title">
+    <div class="wrap about-grid">
+      <div class="about-intro">
+        <p class="eyebrow reveal">Detrás del destello</p>
+        <h2 class="reveal" id="about-title">Hola, soy<br><em>María Sofía.</em></h2>
+        <p class="reveal">Estudio Creación Digital en la Universidad El Bosque. Me muevo entre el código y la imagen: programo videojuegos y sitios web, modelo en 3D y diseño marcas, campañas e ilustraciones.</p>
+        <p class="reveal">Hoy estoy buscando <strong>prácticas profesionales</strong> donde pueda aportar desde el diseño y el desarrollo.</p>
+        <div class="about-actions reveal">
+          <a class="btn btn-solid" href="mailto:msofia.velez@hotmail.com">Escríbeme</a>
+          <a class="btn btn-ghost" href="https://github.com/Msvelez" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a>
+        </div>
+      </div>
+      <dl class="about-facts">
+        <div class="reveal"><dt>Ahora</dt><dd>Programo <strong>Zenka</strong>, un puzzle-platformer 2D en Unity, y un videojuego educativo en Godot dentro de un semillero.</dd></div>
+        <div class="reveal"><dt>Web</dt><dd>Hice <a href="experiencias.html#plataformas">Misión Representante</a>, la plataforma de elección estudiantil 2026, con Next.js y Firebase.</dd></div>
+        <div class="reveal"><dt>Comunidad</dt><dd>Representante estudiantil de Creación Digital y tutora par de Lenguajes Digitales.</dd></div>
+        <div class="reveal"><dt>Herramientas</dt><dd>Unity · Godot · Blender · Figma · Illustrator · Photoshop · HTML, CSS y JavaScript · Next.js</dd></div>
+        <div class="reveal"><dt>Idiomas</dt><dd>Español nativo · Inglés B2 (Cambridge Linguaskill)</dd></div>
+      </dl>
     </div>
   </section>
 
@@ -122,8 +166,8 @@
         <div>
           <p class="eyebrow reveal" data-profile="manifesto.eyebrow">Trayectoria</p>
           <h2 class="reveal" style="margin:1rem 0 1.6rem;" data-profile="manifesto.title">Manifiesto</h2>
-          <p class="reveal" data-profile="manifesto.paragraphs.0"><strong>Marso Studio</strong> es un ecosistema creativo donde la tecnología está al servicio de la imaginación, y no al revés. Creemos en un diseño que se sienta humano: imperfecto, consciente y auténtico.</p>
-          <p class="reveal" data-profile="manifesto.paragraphs.1">Nuestra misión es dar forma a experiencias digitales que amplifiquen la vida, la emoción y el significado. Porque crear es ser libre, y la libertad comienza con un diseño que recuerda su humanidad.</p>
+          <p class="reveal" data-profile="manifesto.paragraphs.0"><strong>Marso Studio</strong> es mi ecosistema creativo: un lugar donde la tecnología está al servicio de la imaginación, y no al revés. Creo en un diseño que se sienta humano: imperfecto, consciente y auténtico.</p>
+          <p class="reveal" data-profile="manifesto.paragraphs.1">Mi misión es dar forma a experiencias digitales que amplifiquen la vida, la emoción y el significado. Porque crear es ser libre, y la libertad comienza con un diseño que recuerda su humanidad.</p>
         </div>
         <div class="badge-wrap reveal">
           <svg viewBox="0 0 300 300">
@@ -163,22 +207,22 @@
         <li class="process-step reveal">
           <span class="process-number" data-profile=".number">01</span>
           <h3 data-profile=".title">Escuchar y observar</h3>
-          <p data-profile=".text">Conocemos la idea, las personas a las que quiere llegar y el contexto que le da sentido.</p>
+          <p data-profile=".text">Conozco la idea, las personas a las que quiere llegar y el contexto que le da sentido.</p>
         </li>
         <li class="process-step reveal">
           <span class="process-number" data-profile=".number">02</span>
           <h3 data-profile=".title">Explorar posibilidades</h3>
-          <p data-profile=".text">Investigamos referencias y probamos caminos hasta encontrar una dirección con carácter.</p>
+          <p data-profile=".text">Investigo referencias y pruebo caminos hasta encontrar una dirección con carácter.</p>
         </li>
         <li class="process-step reveal">
           <span class="process-number" data-profile=".number">03</span>
           <h3 data-profile=".title">Dar forma al concepto</h3>
-          <p data-profile=".text">Desarrollamos el lenguaje visual y las piezas necesarias para que la idea se sienta coherente y propia.</p>
+          <p data-profile=".text">Desarrollo el lenguaje visual y las piezas necesarias para que la idea se sienta coherente y propia.</p>
         </li>
         <li class="process-step reveal">
           <span class="process-number" data-profile=".number">04</span>
           <h3 data-profile=".title">Activar y compartir</h3>
-          <p data-profile=".text">Pulimos los detalles y preparamos el resultado para encontrarse con su audiencia, en cada formato.</p>
+          <p data-profile=".text">Pulo los detalles y preparo el resultado para encontrarse con su audiencia, en cada formato.</p>
         </li>
       </ol>
     </div>
@@ -193,7 +237,7 @@
       </div>
       <div class="area-map reveal" data-profile-list="areas.items" data-profile-fixed>
         <a class="area-map-item area-map-branding" data-tilt href="branding.html" data-profile-href=".href" data-profile-attr-data-soon=".maintenance"><span data-profile="{.number}{?.status| · }">01</span><strong data-profile=".title">Branding + Publicidad</strong><em data-profile=".description">Ideas que encuentran su forma.</em><b aria-hidden="true">↗</b></a>
-        <a class="area-map-item area-map-digital" data-tilt href="digital.html" data-profile-href=".href" data-profile-attr-data-soon=".maintenance" data-soon="Diseño Digital"><span data-profile="{.number}{?.status| · }">02 · En mantenimiento</span><strong data-profile=".title">Diseño Digital</strong><em data-profile=".description">Ideas que encuentran su espacio.</em><b aria-hidden="true">↗</b></a>
+        <a class="area-map-item area-map-digital" data-tilt href="digital.html" data-profile-href=".href" data-profile-attr-data-soon=".maintenance"><span data-profile="{.number}{?.status| · }">02</span><strong data-profile=".title">Diseño Digital</strong><em data-profile=".description">Ideas que encuentran su espacio.</em><b aria-hidden="true">↗</b></a>
         <a class="area-map-item area-map-motion" data-tilt href="motion.html" data-profile-href=".href" data-profile-attr-data-soon=".maintenance"><span data-profile="{.number}{?.status| · }">03</span><strong data-profile=".title">Contenido + Motion</strong><em data-profile=".description">Ideas que empiezan a moverse.</em><b aria-hidden="true">↗</b></a>
         <a class="area-map-item area-map-3d" data-tilt href="lab.html" data-profile-href=".href" data-profile-attr-data-soon=".maintenance"><span data-profile="{.number}{?.status| · }">04</span><strong data-profile=".title">3D + Exploración</strong><em data-profile=".description">Modelado, animación y texturas.</em><b aria-hidden="true">↗</b></a>
         <a class="area-map-item area-map-web" data-tilt href="experiencias.html" data-profile-href=".href" data-profile-attr-data-soon=".maintenance"><span data-profile="{.number}{?.status| · }">05</span><strong data-profile=".title">Experiencias Web</strong><em data-profile=".description">Proyectos digitales para explorar.</em><b aria-hidden="true">↗</b></a>
@@ -209,6 +253,10 @@
       </div>
       <p class="lede reveal" data-profile="contactSection.lede">Un proyecto de código, 3D, branding o ilustración empieza con un mensaje. Cuéntame por dónde va tu idea.</p>
       <a class="email-link reveal" href="mailto:msofia.velez@hotmail.com" data-profile-href="mailto:{contact.email}" data-profile-text="contact.email">msofia.velez@hotmail.com <span class="mini-spark"><svg viewBox="-72 -72 144 144"><use href="#spark" fill="currentColor"/></svg></span></a>
+      <ul class="contact-links reveal">
+        <li><a href="https://github.com/Msvelez" target="_blank" rel="noopener">GitHub <span aria-hidden="true">↗</span></a></li>
+        <li><a href="experiencias.html">Proyectos web <span aria-hidden="true">↗</span></a></li>
+      </ul>
     </div>
   </section>
 </main>
