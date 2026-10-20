@@ -64,7 +64,7 @@
 /* New sections (2026-10): typography series, editorial, Fab Lab, Adicción Digital */
 .brand-type,.brand-editorial{grid-template-columns:repeat(4,minmax(0,1fr));}
 .brand-editorial .area-figure:nth-child(even),.brand-type .area-figure:nth-child(even){margin-top:3rem;}
-.fablab-row{grid-template-columns:1fr 1fr;align-items:end;margin-top:1.5rem;}
+.fablab-row{grid-template-columns:minmax(0,1fr);max-width:44rem;margin-top:1.5rem;}
 .digital-keys{list-style:none;margin:0;padding:0;display:grid;gap:0;border-top:1px solid var(--line);}
 .digital-keys li{padding:1.3rem 0;display:flex;flex-direction:column;gap:.35rem;border-bottom:1px solid var(--line);}
 .digital-case{grid-template-columns:.8fr 1.2fr;align-items:center;}.digital-case-copy .eyebrow{margin-bottom:1.2rem;}
@@ -73,4 +73,3 @@
 .digital-keys span{color:var(--ash);font-size:.95rem;}
 .area-digital .area-case-grid .area-deck-window{max-height:min(78vh,44rem);}
 @media (max-width:900px){.brand-type,.brand-editorial{grid-template-columns:repeat(2,minmax(0,1fr));}.brand-editorial .area-figure:nth-child(even),.brand-type .area-figure:nth-child(even){margin-top:2rem;}.digital-case{grid-template-columns:1fr;}}
-@media (max-width:560px){.fablab-row{grid-template-columns:1fr;}}

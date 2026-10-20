@@ -146,7 +146,7 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 | Voz en primera persona en hero, manifiesto y proceso; pill "Abierta a prácticas" | `index.html`, `profile.json` |
 | GitHub en "Sobre mí" y en contacto | `index.html`, `style.css` |
 | Diseño Digital deja de estar en mantenimiento: Adicción Digital + prototipos Reflections y Asértika (antes eran tarjetas de relleno) | `digital.html`, `area.css`, `profile.json`, `assets-digital/` |
-| Fab Lab: Renito y gatos en CNC | `lab.html`, `area.css`, `assets-3d/fablab/` |
+| Fab Lab: Renito en CNC | `lab.html`, `area.css`, `assets-3d/fablab/` |
 | Tipografía (Humanismo Digital) y editorial Wes Anderson | `branding.html`, `area.css`, `assets-publicidad/tipografia/`, `assets-publicidad/editorial/` |
 | Traducciones al inglés de todo lo nuevo; proyectos nuevos en el modelo de datos | `i18n-en.js`, `projects.js` |
 

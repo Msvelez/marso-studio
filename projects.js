@@ -466,8 +466,7 @@
       pieces: [
         {title: 'Simulación', image: 'assets-3d/fablab/renito-simulacion.jpg'},
         {title: 'Mecanizado', image: 'assets-3d/fablab/renito-madera.jpg'},
-        {title: 'Acabado', image: 'assets-3d/fablab/renito-pintado.jpg'},
-        {title: 'Gatos tallados en CNC', image: 'assets-3d/fablab/gatos-madera.jpg'}
+        {title: 'Acabado', image: 'assets-3d/fablab/renito-pintado.jpg'}
       ],
       page: 'lab.html#fablab',
       cover: 'assets-3d/fablab/renito-pintado.jpg'
