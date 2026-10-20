@@ -26,6 +26,7 @@
     'digital-campaign':    {area: 'web', label: 'Campañas digitales'},
     'interactive-story':   {area: 'web', label: 'Relato interactivo'},
     'portfolio-prototype': {area: 'web', label: 'Portafolios + prototipos'},
+    'videogame':           {area: 'web', label: 'Videojuegos'},
 
     'research-creation':   {area: 'digital', label: 'Investigación-creación'},
 
@@ -132,7 +133,7 @@
       role: 'UX/UI · Dirección visual',
       summary: 'Interfaces diseñadas para dar a una idea un lugar donde vivir.',
       page: 'experiencias.html#prototipos',
-      cover: 'assets-publicidad/billboard/branding/prototipo-figma-1-reflections.png'
+      cover: 'assets-publicidad/billboard/branding/prototipo-figma-1-reflections.jpg'
     },
     {
       id: 'figma-asertika',
@@ -143,7 +144,7 @@
       summary: 'Interfaces diseñadas para dar a una idea un lugar donde vivir.',
       links: {process: 'https://www.canva.com/design/DAGnqZoLXqE/BMIFk6rCshIPN0TijdODBg/view'},
       page: 'experiencias.html#prototipos',
-      cover: 'assets-publicidad/billboard/branding/prototipo-figma-2-asertika.png'
+      cover: 'assets-publicidad/billboard/branding/prototipo-figma-2-asertika.jpg'
     },
 
     /* ---------- branding: branding.html ---------- */
@@ -155,19 +156,19 @@
       role: 'Dirección de arte',
       summary: 'Un concepto de film que se expande: poster, personajes, postales y piezas sociales bajo una misma dirección visual.',
       pieces: [
-        {title: 'Poster principal', image: 'assets-publicidad/billboard/campana-film/poster-campana-1.png'},
-        {title: 'Segundo poster', image: 'assets-publicidad/billboard/campana-film/poster-campana-2.png'},
-        {title: 'Tríptico, frente', image: 'assets-publicidad/billboard/campana-film/triptico-vista-frontal.png'},
-        {title: 'Tríptico, dorso', image: 'assets-publicidad/billboard/campana-film/triptico-vista-tarsera.png'},
-        {title: 'Social: Angye', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-angye.png'},
-        {title: 'Social: David', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-david.png'},
-        {title: 'Social: Emily', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-emily.png'},
-        {title: 'Social: Mariana', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-mariana.png'},
-        {title: 'Social: Sofía', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-sofia.png'}
+        {title: 'Poster principal', image: 'assets-publicidad/billboard/campana-film/poster-campana-1.jpg'},
+        {title: 'Segundo poster', image: 'assets-publicidad/billboard/campana-film/poster-campana-2.jpg'},
+        {title: 'Tríptico, frente', image: 'assets-publicidad/billboard/campana-film/triptico-vista-frontal.jpg'},
+        {title: 'Tríptico, dorso', image: 'assets-publicidad/billboard/campana-film/triptico-vista-tarsera.jpg'},
+        {title: 'Social: Angye', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-angye.jpg'},
+        {title: 'Social: David', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-david.jpg'},
+        {title: 'Social: Emily', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-emily.jpg'},
+        {title: 'Social: Mariana', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-mariana.jpg'},
+        {title: 'Social: Sofía', image: 'assets-publicidad/billboard/campana-film/publicidad-instagram-sofia.jpg'}
       ],
       links: {process: 'https://www.canva.com/design/DAG4cXVRAa0/_P43fCc_6MONnnZ5VHxwGg/view'},
       page: 'branding.html#campanas',
-      cover: 'assets-publicidad/billboard/campana-film/poster-campana-1.png'
+      cover: 'assets-publicidad/billboard/campana-film/poster-campana-1.jpg'
     },
     {
       id: 'posters-publicidad',
@@ -177,12 +178,12 @@
       role: 'Diseño gráfico',
       summary: 'Seis posters, seis maneras de construir presencia cuando una imagen necesita ocupar espacio.',
       pieces: [
-        {title: 'Coca-Cola Magazine', type: 'Poster', image: 'assets-publicidad/billboard/posters/poster-cocacola-magazine.png'},
+        {title: 'Coca-Cola Magazine', type: 'Poster', image: 'assets-publicidad/billboard/posters/poster-cocacola-magazine.jpg'},
         {title: 'Forrest Gump', type: 'Ilustración', image: 'assets-publicidad/billboard/posters/poster-ilustrado-forrest-gump.png'},
-        {title: 'Kings of Leon', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-kingsofleon-estereo-picnic.png'},
-        {title: 'Lady Gaga', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-ladygaga-estereo-picnic.png'},
-        {title: 'The Cure', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-thecure-estereo-picnic.png'},
-        {title: 'The Marías', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-themarias-estereo-picnic.png'}
+        {title: 'Kings of Leon', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-kingsofleon-estereo-picnic.jpg'},
+        {title: 'Lady Gaga', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-ladygaga-estereo-picnic.jpg'},
+        {title: 'The Cure', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-thecure-estereo-picnic.jpg'},
+        {title: 'The Marías', type: 'Estéreo Picnic', image: 'assets-publicidad/billboard/posters/poster-themarias-estereo-picnic.jpg'}
       ],
       process: {
         title: 'Estéreo Picnic: del autorretrato al póster',
@@ -192,12 +193,12 @@
         image: 'assets-publicidad/billboard/proceso/proceso-posters-estereo-picnic.jpg'
       },
       applications: [
-        {title: 'MUPI', image: 'assets-publicidad/billboard/mupi/mupi-ladygaga-estereo-picnic.png'},
-        {title: 'Wildposting', image: 'assets-publicidad/billboard/wildposting/wildposting.png'},
-        {title: 'Billboard', image: 'assets-publicidad/billboard/billboard.png'}
+        {title: 'MUPI', image: 'assets-publicidad/billboard/mupi/mupi-ladygaga-estereo-picnic.jpg'},
+        {title: 'Wildposting', image: 'assets-publicidad/billboard/wildposting/wildposting.jpg'},
+        {title: 'Billboard', image: 'assets-publicidad/billboard/billboard.jpg'}
       ],
       page: 'branding.html#posters',
-      cover: 'assets-publicidad/billboard/posters/poster-ladygaga-estereo-picnic.png'
+      cover: 'assets-publicidad/billboard/posters/poster-ladygaga-estereo-picnic.jpg'
     },
     {
       id: 'autorretrato-vectorial',
@@ -218,7 +219,7 @@
       summary: 'Antes de imprimirse, cada postal fue boceto, prueba y ajuste.',
       links: {process: 'https://www.canva.com/design/DAGzJOz3AkA/z5QHLoIvp5yMgS5tFaCqNw/view'},
       page: 'branding.html#comunicacion',
-      cover: 'assets-publicidad/billboard/comunicacion/postales-mambo-infraleve.png'
+      cover: 'assets-publicidad/billboard/comunicacion/postales-mambo-infraleve.jpg'
     },
     {
       id: 'sistema-de-contenidos',
@@ -228,15 +229,15 @@
       role: 'Dirección visual',
       summary: 'Una identidad que cambia de formato sin perder su voz.',
       pieces: [
-        {title: 'Email: Coca-Cola', image: 'assets-publicidad/billboard/comunicacion/email-cocacola.png'},
-        {title: 'Email: The North Face', image: 'assets-publicidad/billboard/comunicacion/email-northface.png'},
-        {title: 'Carrusel: Chocosapiens', image: 'assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.png'},
-        {title: 'SPFC: Curso', image: 'assets-publicidad/billboard/comunicacion/spfc-publicacion-curso.png'},
-        {title: 'SPFC: De vuelta', image: 'assets-publicidad/billboard/comunicacion/spfc-publicacion-devuelta-1.png'},
-        {title: 'SPFC: Navidad', image: 'assets-publicidad/billboard/comunicacion/spfc-publicacion-navidad-frontal.png'}
+        {title: 'Email: Coca-Cola', image: 'assets-publicidad/billboard/comunicacion/email-cocacola.webp'},
+        {title: 'Email: The North Face', image: 'assets-publicidad/billboard/comunicacion/email-northface.jpg'},
+        {title: 'Carrusel: Chocosapiens', image: 'assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.jpg'},
+        {title: 'SPFC: Curso', image: 'assets-publicidad/billboard/comunicacion/spfc-publicacion-curso.jpg'},
+        {title: 'SPFC: De vuelta', image: 'assets-publicidad/billboard/comunicacion/spfc-publicacion-devuelta-1.jpg'},
+        {title: 'SPFC: Navidad', image: 'assets-publicidad/billboard/comunicacion/spfc-publicacion-navidad-frontal.jpg'}
       ],
       page: 'branding.html#comunicacion',
-      cover: 'assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.png'
+      cover: 'assets-publicidad/billboard/comunicacion/carrusel-publicacion-chocosapiens.jpg'
     },
     {
       id: 'identidad-marso-studio',
@@ -248,7 +249,7 @@
       pieces: [
         {title: 'Logotipo final', image: 'assets-publicidad/billboard/branding/marso-logotipo-final.png'},
         {title: 'Banner', image: 'assets-publicidad/billboard/branding/banner-marso-1.png'},
-        {title: 'Firma de email', image: 'assets-publicidad/billboard/branding/email-signature-marso.png'},
+        {title: 'Firma de email', image: 'assets-publicidad/billboard/branding/email-signature-marso.jpg'},
         {title: 'Variación del logotipo', image: 'assets-publicidad/billboard/branding/logotipo-marso-1.png'}
       ],
       page: 'branding.html#identidad',
@@ -316,6 +317,38 @@
       ],
       page: 'branding.html#editorial',
       cover: 'assets-publicidad/editorial/wes-anderson-poster.jpg'
+    },
+
+    {
+      id: 'dimension-percepcion',
+      title: 'Dimensión de la Percepción',
+      area: 'web', category: 'videogame',
+      context: 'Semillero de investigación · Universidad El Bosque',
+      type: 'Videojuego educativo · prototipo del Nivel 1',
+      summary: 'Un videojuego educativo para aprender diseño visual jugando: el mundo recupera el color a medida que resuelves puzles de color, tipografía y composición.',
+      stack: ['Godot 4', 'GDScript', 'Shaders'],
+      links: {live: 'juegos/dimension-percepcion/index.html'},
+      page: 'experiencias.html#videojuegos',
+      cover: 'assets-juegos/dp-jardin-color.jpg',
+      pieces: [
+        {title: 'Recorrido del nivel', video: 'assets-juegos/dimension-percepcion-recorrido.mp4'},
+        {title: 'Jerarquía tipográfica', image: 'assets-juegos/dp-cartel-lector.jpg'},
+        {title: 'El Archivo Tipográfico', image: 'assets-juegos/dp-archivo-tipografico.jpg'},
+        {title: 'El Perfeccionista', image: 'assets-juegos/dp-perfeccionista.jpg'}
+      ]
+    },
+    {
+      id: 'zenka',
+      title: 'Zenka: la Conciencia y la Sombra',
+      area: 'web', category: 'videogame',
+      context: 'Estudio de Creación Digital · Universidad El Bosque',
+      type: 'Puzzle-platformer 2D en equipo',
+      role: 'Programación',
+      summary: 'Un puzzle-platformer 2D en el que controlas a Dilan y a su Sombra en dos mundos reflejados.',
+      stack: ['Unity', 'C#', 'Pixel art'],
+      status: 'MVP en desarrollo',
+      page: 'experiencias.html#videojuegos',
+      cover: 'assets-juegos/zenka-escenario.jpg'
     },
 
     /* ---------- digital: digital.html ---------- */
@@ -422,13 +455,13 @@
         character: 'Avgí',
         animal: 'Ares, un leongato espiritual',
         weapon: 'Ares Lucent',
-        image: 'assets-3d/juken/avgi-concepto.png'
+        image: 'assets-3d/juken/avgi-concepto.jpg'
       },
       pieces: [
         {title: 'Avgí, modelo 3D texturizado', image: 'assets-3d/modelos/avgi.jpg', model: 'assets-3d/modelos/avgi.glb'},
         {title: 'Avgí, sculpt en T-pose', image: 'assets-3d/juken/avgi-sculpt-tpose.png'},
         {title: 'Detalle: cabello y gesto', image: 'assets-3d/juken/avgi-sculpt-detalle-cabello.png'},
-        {title: 'Pitch', image: 'assets-3d/juken/juken-presentacion.png'}
+        {title: 'Pitch', image: 'assets-3d/juken/juken-presentacion.jpg'}
       ],
       page: 'lab.html#juken',
       cover: 'assets-3d/juken/avgi-sculpt-tpose.png'
@@ -440,12 +473,12 @@
       type: 'Animación · loop',
       summary: 'Loops cortos para probar ritmo, luz y superficie: pequeñas pruebas que se repiten hasta que el movimiento se siente natural.',
       pieces: [
-        {title: 'Estela', type: 'Animación · loop', image: 'assets-3d/animacion/esfera-neon-estela.gif', description: 'Una esfera que deja rastro: timing, arco de movimiento y luz de borde.'},
-        {title: 'Rayas', type: 'Textura · animación', image: 'assets-3d/animacion/tubos-rayados.gif', description: 'Un patrón rayado que envuelve la curva y acompaña el giro.'},
-        {title: 'Señal', type: 'Prueba de movimiento', image: 'assets-3d/animacion/pixel-magenta.gif', description: 'Un punto en la oscuridad basta para probar una trayectoria.'}
+        {title: 'Estela', type: 'Animación · loop', image: 'assets-3d/animacion/esfera-neon-estela.mp4', description: 'Una esfera que deja rastro: timing, arco de movimiento y luz de borde.'},
+        {title: 'Rayas', type: 'Textura · animación', image: 'assets-3d/animacion/tubos-rayados.mp4', description: 'Un patrón rayado que envuelve la curva y acompaña el giro.'},
+        {title: 'Señal', type: 'Prueba de movimiento', image: 'assets-3d/animacion/pixel-magenta.mp4', description: 'Un punto en la oscuridad basta para probar una trayectoria.'}
       ],
       page: 'lab.html#animacion',
-      cover: 'assets-3d/animacion/esfera-neon-estela.gif'
+      cover: 'assets-3d/animacion/esfera-neon-estela.mp4'
     },
     {
       id: 'criatura-y-marco',
@@ -457,7 +490,7 @@
       model: 'assets-3d/modelos/cuadro-lovecraft.glb',
       page: 'lab.html#esculturas',
       cover: 'assets-3d/modelos/cuadro-lovecraft.jpg',
-      pieces: [{title: 'Proceso: escultura en gris', image: 'assets-3d/modelado/escultura-tentaculos-marco.gif'}]
+      pieces: [{title: 'Proceso: escultura en gris', image: 'assets-3d/modelado/escultura-tentaculos-marco.mp4'}]
     },
     {
       id: 'renito',

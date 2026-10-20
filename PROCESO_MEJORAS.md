@@ -154,3 +154,14 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 Pendiente: URL de LinkedIn y PDF de la hoja de vida para enlazarlos en "Sobre mí" y contacto.
 
 **Cómo agregar otro modelo 3D:** exportar desde Blender a `.glb` (Archivo → Exportar → glTF 2.0, con "Aplicar modificadores"), comprimirlo con `npx @gltf-transform/cli optimize entrada.glb salida.glb --compress meshopt --texture-compress webp`, guardarlo en `assets-3d/modelos/` y copiar el bloque `<figure class="model3d">` de `lab.html` cambiando `data-model` y el póster. Si el modelo no trae luces, subir `data-ambient` y `data-env`.
+
+## 5. Ronda 2026-10-20 (tarde): peso, voz y proyectos que faltaban
+
+| Mejora | Archivos |
+|---|---|
+| Imágenes: 32 PNG pesados pasan a JPG/WebP (de 203 MB a 10 MB); los GIF del laboratorio pasan a videos MP4 en loop (de 29 MB a 1,7 MB) | `assets-publicidad/`, `assets-3d/`, `branding.html`, `lab.html`, `experiencias.html`, `digital.html`, `projects.js` |
+| Páginas de área en primera persona ("diseño", "construyo"); las invitaciones al visitante siguen en plural ("¿lo hacemos juntos?") | `branding.html`, `digital.html`, `motion.html`, `lab.html`, `i18n-en.js` |
+| 05 / Videojuegos: Dimensión de la Percepción jugable en el navegador (build web de Godot 4.7, sin hilos) y Zenka con su equipo | `experiencias.html`, `games.js`, `juegos/dimension-percepcion/`, `assets-juegos/` |
+| 02 / Investigación UX: caso Laika con Emily Chisaba y Damián Borda | `digital.html`, `area.css` |
+
+**Cómo actualizar el juego:** en Godot, Proyecto → Exportar → Web (sin "Thread Support") y reemplazar los archivos de `juegos/dimension-percepcion/`. Si se exporta con hilos, GitHub Pages no lo puede correr.
