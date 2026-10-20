@@ -443,3 +443,6 @@ main:focus{outline:none;}
 .contact-links a{color:var(--ash);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:.2rem;}
 .contact-links a:hover{color:var(--gold);border-color:var(--gold);}
 @media (prefers-reduced-motion:reduce){.showcase-item img{transition:none;}.showcase-item:hover img{transform:none;}}
+.about-links{list-style:none;display:flex;gap:1.4rem;margin:1.2rem 0 0;padding:0;font-family:var(--font-mono);font-size:.72rem;letter-spacing:.08em;text-transform:uppercase;}
+.about-links a{color:var(--ash);text-decoration:none;border-bottom:1px solid var(--line);padding-bottom:.2rem;}
+.about-links a:hover{color:var(--gold);border-color:var(--gold);}

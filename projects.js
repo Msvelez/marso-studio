@@ -325,6 +325,7 @@
       area: 'web', category: 'videogame',
       context: 'Semillero de investigación · Universidad El Bosque',
       type: 'Videojuego educativo · prototipo del Nivel 1',
+      role: 'Programadora y líder TI',
       summary: 'Un videojuego educativo para aprender diseño visual jugando: el mundo recupera el color a medida que resuelves puzles de color, tipografía y composición.',
       stack: ['Godot 4', 'GDScript', 'Shaders'],
       links: {live: 'juegos/dimension-percepcion/index.html'},
@@ -361,6 +362,18 @@
       summary: '¿Hasta qué punto el diseño UX se convierte en una estrategia que fomenta la adicción digital? Una investigación sobre ética, interactividad y comportamiento.',
       page: 'digital.html#adiccion-digital',
       cover: 'assets-digital/adiccion-digital-portada.jpg'
+    },
+
+    {
+      id: 'laika-ux',
+      title: 'Laika: App & Ecosystem UX Research',
+      area: 'digital', category: 'research-creation',
+      context: 'Análisis de Usuarios II · Universidad El Bosque',
+      type: 'Investigación UX en equipo',
+      summary: '¿Qué hace que un tutor entre a Laika… y qué hace que se quede? Encuesta, diario de estudio, triangulación, funnel AARRR, experimento A/B, usabilidad y accesibilidad.',
+      links: {process: 'assets-digital/laika-ux-research.pdf'},
+      page: 'digital.html#laika',
+      cover: 'assets-digital/laika-portada.jpg'
     },
 
     /* ---------- motion: motion.html ---------- */
@@ -490,7 +503,10 @@
       model: 'assets-3d/modelos/cuadro-lovecraft.glb',
       page: 'lab.html#esculturas',
       cover: 'assets-3d/modelos/cuadro-lovecraft.jpg',
-      pieces: [{title: 'Proceso: escultura en gris', image: 'assets-3d/modelado/escultura-tentaculos-marco.mp4'}]
+      pieces: [
+        {title: 'Animación', video: 'assets-3d/modelos/cuadro-lovecraft-animacion.mp4'},
+        {title: 'Proceso: escultura en gris', video: 'assets-3d/modelado/escultura-tentaculos-marco.mp4'}
+      ]
     },
     {
       id: 'renito',
