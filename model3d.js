@@ -104,6 +104,12 @@ function start(figure, stage, button) {
       }
     });
     scene.add(new THREE.HemisphereLight(0xfff2dd, 0x1a1012, parseFloat(figure.dataset.ambient || '0.4')));
+    const keyPower = parseFloat(figure.dataset.key || '0');
+    if (keyPower > 0) {
+      // a key light that rides with the camera, so the side you are looking at is always lit
+      const key = new THREE.DirectionalLight(0xfff4e6, keyPower);
+      key.position.set(0.6, 0.8, 1); camera.add(key); scene.add(camera);
+    }
 
     const box = new THREE.Box3().setFromObject(root);
     const focus = figure.dataset.focus && root.getObjectByName(figure.dataset.focus);
@@ -120,7 +126,8 @@ function start(figure, stage, button) {
       target.copy(camera.position).addScaledVector(dir, dist);
     } else {
       const size = box.getSize(new THREE.Vector3()).length();
-      camera.position.copy(target).add(new THREE.Vector3(0, size * 0.15, size * 0.9));
+      camera.fov = parseFloat(figure.dataset.fov) || 35;
+      camera.position.copy(target).add(new THREE.Vector3(size * 0.5, size * 0.05, size * 1.35));
     }
     controls.target.copy(target);
     camera.lookAt(target);
@@ -130,9 +137,17 @@ function start(figure, stage, button) {
     controls.update();
     // keep the viewer in front of the piece: limited orbit around the starting angle
     const az = controls.getAzimuthalAngle(), po = controls.getPolarAngle();
-    const spread = parseFloat(figure.dataset.orbit || '0.85');
-    controls.minAzimuthAngle = az - spread; controls.maxAzimuthAngle = az + spread;
-    controls.minPolarAngle = Math.max(0.05, po - spread * 0.7); controls.maxPolarAngle = Math.min(Math.PI - 0.05, po + spread * 0.7);
+    if (figure.dataset.orbit === 'full') {
+      // free-standing pieces (characters): walk all the way around, without going under the floor
+      controls.minPolarAngle = 0.25; controls.maxPolarAngle = Math.PI * 0.62;
+      controls.autoRotate = !matchMedia('(prefers-reduced-motion: reduce)').matches;
+      controls.autoRotateSpeed = 0.8;
+      renderer.domElement.addEventListener('pointerdown', () => { controls.autoRotate = false; }, { once: true });
+    } else {
+      const spread = parseFloat(figure.dataset.orbit || '0.85');
+      controls.minAzimuthAngle = az - spread; controls.maxAzimuthAngle = az + spread;
+      controls.minPolarAngle = Math.max(0.05, po - spread * 0.7); controls.maxPolarAngle = Math.min(Math.PI - 0.05, po + spread * 0.7);
+    }
     home = { pos: camera.position.clone(), target: target.clone() };
 
     stage.appendChild(renderer.domElement);

@@ -425,6 +425,7 @@
         image: 'assets-3d/juken/avgi-concepto.png'
       },
       pieces: [
+        {title: 'Avgí, modelo 3D texturizado', image: 'assets-3d/modelos/avgi.jpg', model: 'assets-3d/modelos/avgi.glb'},
         {title: 'Avgí, sculpt en T-pose', image: 'assets-3d/juken/avgi-sculpt-tpose.png'},
         {title: 'Detalle: cabello y gesto', image: 'assets-3d/juken/avgi-sculpt-detalle-cabello.png'},
         {title: 'Pitch', image: 'assets-3d/juken/juken-presentacion.png'}

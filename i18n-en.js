@@ -361,7 +361,6 @@ window.MARSO_EN = {
   "Preguntas visuales que no necesitan una respuesta inmediata.": "Visual questions that don't need an immediate answer.",
   "01 / Serie animada 3D": "01 / 3D animated series",
   "¿Serán herramientas del destino… o arquitectos de su propia libertad?": "Tools of destiny… or architects of their own freedom?",
-  "AVGÍ / Sculpt en T-pose": "AVGÍ / T-pose sculpt",
   "“Jóvenes que despiertan armas vivas para desafiar un destino impuesto por el error de los dioses.”": "“Young people who awaken living weapons to defy a fate imposed by the gods' mistake.”",
   "JUKEN es una serie animada 3D que sigue a una nueva generación de guerreros de linajes como Leonaris y Ursavel. Estos jóvenes entrenan con bestias dormidas, creyendo que su lugar en los reinos está predeterminado.": "JUKEN is a 3D animated series that follows a new generation of warriors from lineages such as Leonaris and Ursavel. These young people train with sleeping beasts, believing their place in the realms is predetermined.",
   "En su mundo, los dioses no crearon al humano por amor, sino por accidente. Para contenerlo, el dios-abeja Hymnmeris encadenó cada alma a un espíritu animal dentro del Sistema Zoodiacal. Pero cuando los jóvenes enfrentan sus propias crisis, sus Jukens despiertan como Bestiarmas —manifestaciones vivas de su voluntad— y revelan una verdad incómoda: el orden divino no es justicia, es control.": "In their world, the gods didn't create humans out of love, but by accident. To contain them, the bee-god Hymnmeris chained every soul to an animal spirit within the Zoodiacal System. But when the young face their own crises, their Jukens awaken as Beastweapons —living manifestations of their will— and reveal an uncomfortable truth: divine order isn't justice, it's control.",
@@ -595,7 +594,10 @@ window.MARSO_EN = {
   "Una criatura de tentáculos atraviesa un cuadro y arrastra rostros esculpidos consigo. La pieza ya está terminada: gírala, acércate y mira el ojo de cerca.": "A tentacled creature bursts through a frame, dragging sculpted faces with it. The piece is finished: orbit it, zoom in and look the eye up close.",
   "<span class=\"model3d-icon\" aria-hidden=\"true\">⟲</span> Explorar en 3D <small>3 MB</small>": "<span class=\"model3d-icon\" aria-hidden=\"true\">⟲</span> Explore in 3D <small>3 MB</small>",
   "Blender · escultura, rig de tentáculos, texturas y luz": "Blender · sculpting, tentacle rig, textures and lighting",
-  "PROCESO / Escultura en gris": "PROCESS / Gray sculpt"
+  "PROCESO / Escultura en gris": "PROCESS / Gray sculpt",
+  "<span class=\"model3d-icon\" aria-hidden=\"true\">⟲</span> Explorar en 3D <small>1,5 MB</small>": "<span class=\"model3d-icon\" aria-hidden=\"true\">⟲</span> Explore in 3D <small>1.5 MB</small>",
+  "AVGÍ / Modelo 3D": "AVGÍ / 3D model",
+  "Escultura en Blender · texturas en Substance Painter": "Sculpted in Blender · textured in Substance Painter"
  },
  "attr": {
   "Filtrar por tecnología": "Filter by technology",
@@ -659,7 +661,6 @@ window.MARSO_EN = {
   "Activar experimento de ritmo": "Activate rhythm experiment",
   "Contenido + Motion — Marso Studio": "Content + Motion — Marso Studio",
   "Contenido y motion en Marso Studio: un corto experimental sobre la obsesión, campañas publicitarias en video, dirección y edición de cortometrajes.": "Content and motion at Marso Studio: an experimental short film about obsession, video ad campaigns, and short film direction and editing.",
-  "Escultura 3D de Avgí en T-pose, con armadura, falda de placas y botas": "3D sculpture of Avgí in T-pose, with armor, plated skirt and boots",
   "Detalle de perfil de la escultura de Avgí: cabello en mechones y mano extendida": "Profile detail of the Avgí sculpture: hair in locks and an outstretched hand",
   "Boceto de concepto de Avgí con armadura y espada, acompañada por Ares, un leongato espiritual de melena en llamas": "Concept sketch of Avgí with armor and sword, together with Ares, a spirit lion-cat with a flaming mane",
   "Presentación completa de JUKEN, desplazable": "Full JUKEN presentation, scrollable",
@@ -727,6 +728,7 @@ window.MARSO_EN = {
   "Página editorial rosa con fotogramas de películas de Wes Anderson y un texto sobre su estilo visual": "Pink editorial page with stills from Wes Anderson films and a text about his visual style",
   "Página editorial morada con fotogramas de The Grand Budapest Hotel y un texto sobre su paleta de rosas pastel": "Purple editorial page with stills from The Grand Budapest Hotel and a text about its pastel pink palette",
   "Página editorial azul con un fotograma, su paleta de color extraída y un texto sobre la paleta complementaria": "Blue editorial page with a still, its extracted color palette and a text about the complementary palette",
-  "Cuadro Lovecraft en 3D: en un pasillo con una lámpara, una masa oscura de tentáculos con un gran ojo rojo y rostros que gritan sale de un cuadro enmarcado en madera": "Lovecraft painting in 3D: in a hallway with a lamp, a dark mass of tentacles with a large red eye and screaming faces bursts out of a wood-framed painting"
+  "Cuadro Lovecraft en 3D: en un pasillo con una lámpara, una masa oscura de tentáculos con un gran ojo rojo y rostros que gritan sale de un cuadro enmarcado en madera": "Lovecraft painting in 3D: in a hallway with a lamp, a dark mass of tentacles with a large red eye and screaming faces bursts out of a wood-framed painting",
+  "Avgí en 3D, en T-pose: cabello rojo, armadura dorada con falda de placas, brazaletes y botas": "Avgí in 3D, in T-pose: red hair, golden armor with a plated skirt, bracers and boots"
  }
 };
