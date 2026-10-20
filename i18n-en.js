@@ -402,8 +402,6 @@ window.MARSO_EN = {
   "Un punto en la oscuridad basta para probar una trayectoria.": "A dot in the dark is enough to test a trajectory.",
   "03 / Escultura digital": "03 / Digital sculpture",
   "Lo que sale<br>del <em>marco.</em>": "What breaks out<br>of the <em>frame.</em>",
-  "Una criatura de tentáculos atraviesa un cuadro y arrastra rostros esculpidos consigo: un ejercicio de anatomía, pliegue y composición.": "A tentacled creature bursts through a frame, dragging sculpted faces with it: an exercise in anatomy, folds and composition.",
-  "SCULPT / Criatura y marco": "SCULPT / Creature and frame",
   "Modelado orgánico · detalle de rostros": "Organic modeling · facial detail",
   "El laboratorio": "The lab",
   "De la duda<br>a la forma.": "From doubt<br>to form.",
@@ -593,7 +591,11 @@ window.MARSO_EN = {
   "Un estilo que se reconoce": "A recognizable style",
   "La paleta del hotel": "The hotel's palette",
   "Paleta complementaria": "Complementary palette",
-  "Lo que busca": "What it seeks"
+  "Lo que busca": "What it seeks",
+  "Una criatura de tentáculos atraviesa un cuadro y arrastra rostros esculpidos consigo. La pieza ya está terminada: gírala, acércate y mira el ojo de cerca.": "A tentacled creature bursts through a frame, dragging sculpted faces with it. The piece is finished: orbit it, zoom in and look the eye up close.",
+  "<span class=\"model3d-icon\" aria-hidden=\"true\">⟲</span> Explorar en 3D <small>3 MB</small>": "<span class=\"model3d-icon\" aria-hidden=\"true\">⟲</span> Explore in 3D <small>3 MB</small>",
+  "Blender · escultura, rig de tentáculos, texturas y luz": "Blender · sculpting, tentacle rig, textures and lighting",
+  "PROCESO / Escultura en gris": "PROCESS / Gray sculpt"
  },
  "attr": {
   "Filtrar por tecnología": "Filter by technology",
@@ -724,6 +726,7 @@ window.MARSO_EN = {
   "Póster ilustrado de The Grand Budapest Hotel en rosa y morado, con el hotel dentro del uniforme del conserje": "Illustrated poster of The Grand Budapest Hotel in pink and purple, with the hotel inside the concierge's uniform",
   "Página editorial rosa con fotogramas de películas de Wes Anderson y un texto sobre su estilo visual": "Pink editorial page with stills from Wes Anderson films and a text about his visual style",
   "Página editorial morada con fotogramas de The Grand Budapest Hotel y un texto sobre su paleta de rosas pastel": "Purple editorial page with stills from The Grand Budapest Hotel and a text about its pastel pink palette",
-  "Página editorial azul con un fotograma, su paleta de color extraída y un texto sobre la paleta complementaria": "Blue editorial page with a still, its extracted color palette and a text about the complementary palette"
+  "Página editorial azul con un fotograma, su paleta de color extraída y un texto sobre la paleta complementaria": "Blue editorial page with a still, its extracted color palette and a text about the complementary palette",
+  "Cuadro Lovecraft en 3D: en un pasillo con una lámpara, una masa oscura de tentáculos con un gran ojo rojo y rostros que gritan sale de un cuadro enmarcado en madera": "Lovecraft painting in 3D: in a hallway with a lamp, a dark mass of tentacles with a large red eye and screaming faces bursts out of a wood-framed painting"
  }
 };

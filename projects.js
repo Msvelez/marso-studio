@@ -10,7 +10,7 @@
      summary   one-line description from the site
      page      where it lives on this site (file + anchor)
      cover     main image or video path (relative to the site root)
-   Optional: context, type, role, tools, stack, status, duration, audience, note, technicalNotes,
+   Optional: context, type, role, tools, stack, status, duration, audience, note, technicalNotes, model (.glb for the 3D viewer),
              links {live, process}, pieces [{ title, type?, image?, video?, duration?, description? }], process {...}, concept {...} */
 (function(){
   var areas = {
@@ -448,12 +448,15 @@
     },
     {
       id: 'criatura-y-marco',
-      title: 'Criatura y marco',
+      title: 'Cuadro Lovecraft',
       area: '3d', category: 'digital-sculpture',
-      type: 'Modelado orgánico · detalle de rostros',
-      summary: 'Una criatura de tentáculos atraviesa un cuadro y arrastra rostros esculpidos consigo: un ejercicio de anatomía, pliegue y composición.',
+      type: 'Escultura digital · rig de tentáculos · texturas y luz',
+      tools: ['Blender'],
+      summary: 'Una criatura de tentáculos atraviesa un cuadro y arrastra rostros esculpidos consigo. Pieza terminada, explorable en 3D.',
+      model: 'assets-3d/modelos/cuadro-lovecraft.glb',
       page: 'lab.html#esculturas',
-      cover: 'assets-3d/modelado/escultura-tentaculos-marco.gif'
+      cover: 'assets-3d/modelos/cuadro-lovecraft.jpg',
+      pieces: [{title: 'Proceso: escultura en gris', image: 'assets-3d/modelado/escultura-tentaculos-marco.gif'}]
     },
     {
       id: 'renito',

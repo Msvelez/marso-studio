@@ -148,6 +148,9 @@ Rama de trabajo: `mejoras-referencias`. Fecha de inicio: 2026-10-01.
 | Diseño Digital deja de estar en mantenimiento: Adicción Digital + prototipos Reflections y Asértika (antes eran tarjetas de relleno) | `digital.html`, `area.css`, `profile.json`, `assets-digital/` |
 | Fab Lab: Renito en CNC | `lab.html`, `area.css`, `assets-3d/fablab/` |
 | Tipografía (Humanismo Digital) y editorial Wes Anderson | `branding.html`, `area.css`, `assets-publicidad/tipografia/`, `assets-publicidad/editorial/` |
+| Visor 3D (`model3d.js`, three.js desde jsDelivr): el Cuadro Lovecraft terminado se puede girar y acercar; solo se descarga al tocar "Explorar en 3D" | `model3d.js`, `lab.html`, `area.css`, `assets-3d/modelos/` |
 | Traducciones al inglés de todo lo nuevo; proyectos nuevos en el modelo de datos | `i18n-en.js`, `projects.js` |
 
 Pendiente: URL de LinkedIn y PDF de la hoja de vida para enlazarlos en "Sobre mí" y contacto.
+
+**Cómo agregar otro modelo 3D:** exportar desde Blender a `.glb` (Archivo → Exportar → glTF 2.0, con "Aplicar modificadores"), comprimirlo con `npx @gltf-transform/cli optimize entrada.glb salida.glb --compress meshopt --texture-compress webp`, guardarlo en `assets-3d/modelos/` y copiar el bloque `<figure class="model3d">` de `lab.html` cambiando `data-model` y el póster. Si el modelo no trae luces, subir `data-ambient` y `data-env`.
