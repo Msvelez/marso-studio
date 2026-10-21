@@ -663,7 +663,8 @@ window.MARSO_EN = {
   "SEMANA 10": "WEEK 10",
   "SÍNTESIS": "SYNTHESIS",
   "Usabilidad y SUS": "Usability and SUS",
-  "Journey map integrado": "Integrated journey map"
+  "Journey map integrado": "Integrated journey map",
+  "Diseño, escultura y retopología de Avgí. Los demás personajes son de mis compañeros de equipo.": "Design, sculpt and retopology of Avgí. The other characters are by my teammates."
  },
  "attr": {
   "Filtrar por tecnología": "Filter by technology",
