@@ -147,3 +147,12 @@
 .laika-pdf{margin-top:1.6rem;display:inline-flex;gap:.6rem;align-items:center;}
 .laika-pdf small{font-size:.62rem;opacity:.7;letter-spacing:.06em;}
 .laika-slides{margin-top:3rem;}
+.laika-screens{grid-template-columns:repeat(4,minmax(0,1fr));margin-top:1.5rem;}
+.laika-screens .area-figure{background:#f4f1f8;}
+.web-feature-next{margin-top:2rem;}
+.area-split+.area-label{margin-top:4rem;}
+.zenka-art img,.zenka-art video{width:100%;aspect-ratio:16/10;object-fit:cover;}
+.zenka-art img[src*="triceratops"]{object-fit:contain;background:#fff;}
+.zenka-art .game-anim{object-fit:contain;}
+.game-anim{width:100%;display:block;image-rendering:pixelated;}
+@media (max-width:900px){.laika-screens{grid-template-columns:repeat(2,minmax(0,1fr));}}

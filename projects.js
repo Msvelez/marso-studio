@@ -27,6 +27,7 @@
     'interactive-story':   {area: 'web', label: 'Relato interactivo'},
     'portfolio-prototype': {area: 'web', label: 'Portafolios + prototipos'},
     'videogame':           {area: 'web', label: 'Videojuegos'},
+    'ecommerce':           {area: 'web', label: 'E-commerce'},
 
     'research-creation':   {area: 'digital', label: 'Investigación-creación'},
 
@@ -43,6 +44,7 @@
     'direction':           {area: 'motion', label: 'Dirección'},
     'editing':             {area: 'motion', label: 'Edición'},
     'docudrama':           {area: 'motion', label: 'Docudrama'},
+    'short-film':          {area: 'motion', label: 'Cortometraje'},
 
     'animated-series':     {area: '3d', label: 'Serie animada 3D'},
     'animation':           {area: '3d', label: 'Animación + texturas'},
@@ -64,6 +66,18 @@
       links: {live: 'https://msvelez.github.io/eleccion-representantes-2026/'},
       page: 'experiencias.html#plataformas',
       cover: 'assets-web/mision-representante.jpg'
+    },
+    {
+      id: 'marso-studio-shop',
+      title: 'Marso Studio Shop',
+      area: 'web', category: 'ecommerce',
+      context: 'Lenguajes Digitales IV · Proyecto final',
+      summary: 'Una tienda online de packs de assets 3D y 2D con estética de cine, organizados por género para estudiantes que hacen videojuegos o cortos.',
+      stack: ['HTML', 'CSS', 'JavaScript', 'Supabase'],
+      status: 'En desarrollo',
+      links: {process: 'https://github.com/Msvelez/marso-studio-shop'},
+      page: 'experiencias.html#plataformas',
+      cover: 'assets-web/marso-studio-shop.jpg'
     },
     {
       id: 'parchate',
@@ -344,9 +358,9 @@
       area: 'web', category: 'videogame',
       context: 'Estudio de Creación Digital · Universidad El Bosque',
       type: 'Puzzle-platformer 2D en equipo',
-      role: 'Programación',
+      role: 'Líder del equipo · programación · UX/UI',
       summary: 'Un puzzle-platformer 2D en el que controlas a Dilan y a su Sombra en dos mundos reflejados.',
-      stack: ['Unity', 'C#', 'Pixel art'],
+      stack: ['Unity', 'C#', 'Figma', 'Pixel art', 'Substance Painter'],
       status: 'MVP en desarrollo',
       page: 'experiencias.html#videojuegos',
       cover: 'assets-juegos/zenka-escenario.jpg'
@@ -371,7 +385,7 @@
       context: 'Análisis de Usuarios II · Universidad El Bosque',
       type: 'Investigación UX en equipo',
       summary: '¿Qué hace que un tutor entre a Laika… y qué hace que se quede? Encuesta, diario de estudio, triangulación, funnel AARRR, experimento A/B, usabilidad y accesibilidad.',
-      links: {process: 'assets-digital/laika-ux-research.pdf'},
+      links: {process: 'assets-digital/laika-ux-research.pdf', pitch: 'assets-digital/laika-pitch.pdf'},
       page: 'digital.html#laika',
       cover: 'assets-digital/laika-portada.jpg'
     },
@@ -451,6 +465,19 @@
       links: {process: 'https://www.canva.com/design/DAG4Zi0DaOA/z9Lt6KpeBhRVv6vkt-sVVA/view'},
       page: 'motion.html#docudrama',
       cover: null
+    },
+    {
+      id: 'corte',
+      title: 'CORTE',
+      area: 'motion', category: 'short-film',
+      context: 'Composición Plástica 4 · Universidad El Bosque',
+      type: 'Cortometraje',
+      role: 'Codirección · edición · color',
+      summary: 'Un corto de 13 segundos, codirigido con Emily Chisaba: una pelea que se rompe cuando el reparto grita “¡corte!”.',
+      tools: ['Premiere Pro'],
+      duration: '0:13',
+      page: 'motion.html#corte',
+      cover: 'assets-motion/corte.mp4'
     },
 
     /* ---------- 3d: lab.html ---------- */

@@ -165,3 +165,16 @@ Pendiente: URL de LinkedIn y PDF de la hoja de vida para enlazarlos en "Sobre m�
 | 02 / Investigación UX: caso Laika con Emily Chisaba y Damián Borda | `digital.html`, `area.css` |
 
 **Cómo actualizar el juego:** en Godot, Proyecto → Exportar → Web (sin "Thread Support") y reemplazar los archivos de `juegos/dimension-percepcion/`. Si se exporta con hilos, GitHub Pages no lo puede correr.
+
+## 6. Ronda 2026-11-25: cierre del 4.º semestre
+
+| Mejora | Archivos |
+|---|---|
+| Zenka: mi rol actualizado (líder del equipo, programación, UX/UI, pixel art, Substance) + bloque UX/UI "interfaz espejo" (menú en video, pausa, HUD de Falsa Claridad, flujo de pantallas) + fila 3D y arte (los dos mundos, cráneo de triceratops, trampa animada) | `experiencias.html`, `area.css`, `assets-juegos/zenka-*` |
+| Laika: fase final con los 6 wireframes de media fidelidad, 4 pantallas de alta fidelidad y el PDF del pitch | `digital.html`, `area.css`, `assets-digital/laika-alta-*`, `laika-wireframes-media.jpg`, `laika-pitch.pdf` |
+| CORTE: nuevo cortometraje en Contenido + Motion (06 / Cortometraje), video comprimido a 720p (1,3 MB) | `motion.html`, `assets-motion/corte.*` |
+| Marso Studio Shop: segundo proyecto de 01 / Plataformas, marcado "En desarrollo", enlaza al repositorio | `experiencias.html`, `assets-web/marso-studio-shop.jpg` |
+| Proyectos nuevos en el modelo de datos y traducciones al inglés | `projects.js`, `i18n-en.js` |
+| Vitrina del home con portadas nuevas: Zenka, póster de The Cure, CORTE, Avgí con textura, Wes Anderson, cuadro Lovecraft, Laika y el autorretrato vectorial (horizontales a 960×640, verticales a 720×960); se borran las 8 portadas anteriores | `index.html`, `assets-home/`, `i18n-en.js` |
+
+Pendiente: cuando la tienda esté publicada, cambiar el enlace del repositorio por el sitio en vivo. Algunas capturas de Zenka vienen del pitch en baja resolución; se pueden reemplazar por exportaciones de Figma a 1920×1080.
